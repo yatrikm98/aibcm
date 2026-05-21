@@ -77,7 +77,7 @@ const Company = ({ data }) => {
                     </div>
                     {data.title === "2.4) Mars Wrigley" ? <div className='text-center mt-3'>Note:- The company is in loss(in India) but worldwide it is booming.</div> : ""}
                     <ImageSlider Images={data.images} />
-                    <div className='text-center font-semibold text-[16px] max-[650px]:mt-30'>{data.figCaption} Products Images. </div>
+                    <div className='text-center font-semibold text-[16px] max-[650px]:mt-15'>{data.figCaption} Products Images. </div>
                 </div>
             </div>
         </>
