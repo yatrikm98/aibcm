@@ -1,0 +1,25 @@
+import Company from "../components/Company.jsx";
+import ConfectionaryCompanyData from '../../Data/CompanyData/ConfectionaryCompanyData.jsx'
+import Footer from "../Footer/Footer.jsx";
+
+
+const ConfectionaryManufacturers = () => {
+
+    const renderedData = ConfectionaryCompanyData.map((data,index)=>{
+        return <Company data = {data} key={index}/>
+    })
+
+    return (
+
+        <div className="bg-gray-50">
+            <div className="text-center text-3xl font-bold text-gray-900 bg-gray-50 p-4 mt-15">Top 5 Companies Information :- </div>
+            <div className="mx-auto max-w-6xl font-bold text-3xl bg-gray-50 max-[1100px]:text-center"> 1) Confectionary Manufacturers and Exporters.</div>
+            {renderedData}
+            <Footer/>
+        </div>
+        
+    )
+
+}
+
+export default ConfectionaryManufacturers
