@@ -230,6 +230,27 @@ const ConfectioneryProcess = () => {
                     </div>
                 </div>
             </div>
+            <div className="mx-auto flex justify-around max-w-6xl mt-5 max-[1150px]:flex-col max-[1150px]:items-center">
+                <iframe
+                    className="aspect-video w-full max-w-lg max-[1150px]:max-w-4xl"
+                    src="https://www.youtube.com/embed/2kttVyakHN4?si=FbnhNjSJW7bAqGol"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+                </iframe>
+                <iframe
+                    className="aspect-video w-full max-w-lg max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
+                    src="https://www.youtube.com/embed/V6ze-6LBhhg?si=7wb46h220vwjqxHa"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div className="text-center mt-3 font-semibold text-[16px]">How are Confectionary Made.</div>
         </div>
     );
 };

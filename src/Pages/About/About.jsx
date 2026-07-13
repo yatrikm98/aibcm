@@ -2,6 +2,8 @@ import KamleshSoni from '../../Images/KamleshSoni.jpeg';
 import TimothyBochu from '../../Images/TimothyBochu.jpeg';
 import CompanyLogo from '../../assets/CompanyLogo.svg'
 import Footer from '../Footer/Footer';
+import SharadMeshram from '../../Images/SharadMeshram.jpeg'
+import AshishJha from '../../Images/AshishJha.jpeg'
 
 
 const About = () => {
@@ -32,7 +34,23 @@ const About = () => {
 
   const complianceData = [
     {
-      label: 'Date of Last Annual General Meeting',
+      label: 'Date of Last Annual General Meeting (2026-2027)',
+      value: '2026-07-10',
+    },
+    {
+      label: 'Date of General Meeting (2025-2026)',
+      value: '2025-09-25',
+    },
+    {
+      label: 'Date of General Meeting (2024-2025)',
+      value: '2024-09-27',
+    },
+    {
+      label: 'Date of General Meeting (2023-2024)',
+      value: '2023-09-29',
+    },
+    {
+      label: 'Date of General Meeting (2022-2023)',
       value: '2022-09-30',
     },
     {
@@ -83,37 +101,78 @@ const About = () => {
             <h2 className="mb-3 text-center text-2xl font-semibold text-orange-400 ">
               Key Personnel:
             </h2>
-            <div className='mb-3 text-center'>The company's active directors are <span className='text-orange-400 font-semibold text-xl'>Kamlesh Mulchand Soni</span> and <span className='text-orange-400 font-semibold text-xl'>Timothy Bochu.</span></div>
-            <div className="grid gap-8 sm:grid-cols-2">
+            <div className='mb-3 text-center font-semibold text-xl mb-5'>The company's active directors are :-
+              <div className="flex flex-wrap justify-center gap-8">
+                {/* Card 1 */}
+                <div className="flex w-80 flex-col rounded-xl border border-gray-200 bg-white p-5 shadow-lg">
+                  <h2 className="mb-4 text-center text-xl font-semibold text-orange-500">
+                    Honorary Secretary
+                  </h2>
 
-              {/* Timothy */}
-              <div className="flex flex-col items-center">
-                <img
-                  src={TimothyBochu}
-                  alt="Timothy Bochu"
-                  className="h-72 w-64 rounded-2xl object-cover shadow-md"
-                  loading="lazy"
-                />
+                  <img
+                    src={KamleshSoni}
+                    alt="Kamlesh Soni"
+                    className="mx-auto h-72 w-64 rounded-xl object-cover"
+                    loading="lazy"
+                  />
 
-                <h3 className="mt-4 text-xl font-semibold text-gray-900">
-                  Timothy Bochu
-                </h3>
+                  <h3 className="mt-4 text-center text-xl font-semibold text-gray-900">
+                    Kamlesh Mulchand Soni
+                  </h3>
+
+                  <div className="mt-4 flex-1 break-words text-justify text-gray-700">
+                    <span className="font-semibold">Educational Details:-</span>
+                    <div>Ms, BSc</div>
+                  </div>
+                </div>
+
+                {/* Card 2 */}
+                <div className="flex w-80 flex-col rounded-xl border border-gray-200 bg-white p-5 shadow-lg">
+                  <h2 className="mb-4 text-center text-xl font-semibold text-orange-500">
+                    Special Director
+                  </h2>
+
+                  <img
+                    src={SharadMeshram}
+                    alt="SharadMeshram"
+                    className="mx-auto h-72 w-64 rounded-xl object-cover"
+                    loading="lazy"
+                  />
+
+                  <h3 className="mt-4 text-center text-xl font-semibold text-gray-900">
+                    Sharad Meshram
+                  </h3>
+
+                  <div className="mt-4 flex-1 break-words text-justify text-gray-700">
+                    <span className="font-semibold">Educational Details:-</span>
+                    <div>M.A. (Public Administration)</div>
+                  </div>
+                </div>
+
+                {/* Card 3 */}
+                <div className="flex w-80 flex-col rounded-xl border border-gray-200 bg-white p-5 shadow-lg">
+                  <h2 className="mb-4 text-center text-xl font-semibold text-orange-500">
+                    Executive Director
+                  </h2>
+
+                  <img
+                    src={AshishJha}
+                    alt="AshishJha"
+                    className="mx-auto h-72 w-64 rounded-xl object-cover"
+                    loading="lazy"
+                  />
+
+                  <h3 className="mt-4 text-center text-xl font-semibold text-gray-900">
+                    Ashish Jha
+                  </h3>
+
+                  <div className="mt-4 flex-1 break-words text-justify text-gray-700">
+                    <span className="font-semibold">Educational Details:-</span>
+                    <div>B.A.(Eco Hons)</div>
+                    <div>M.A. (Economics)</div>
+                  </div>
+                </div>
               </div>
-
-              {/* Kamlesh */}
-              <div className="flex flex-col items-center">
-                <img
-                  src={KamleshSoni}
-                  alt="Kamlesh Soni"
-                  className="h-72 w-64 rounded-2xl  shadow-md"
-                  loading="lazy"
-                />
-
-                <h3 className="mt-4 text-xl font-semibold text-gray-900">
-                  Kamlesh Mulchand Soni
-                </h3>
-              </div>
-
             </div>
           </div>
 

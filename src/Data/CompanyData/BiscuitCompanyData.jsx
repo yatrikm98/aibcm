@@ -23,6 +23,17 @@ import DreamLite from '../../Images/Anmol/DreamLite.jpg'
 import ETime from '../../Images/Anmol/E-Time.jpg'
 import MarieLightAnmol from '../../Images/Anmol/MarieLight.jpg'
 import MilkMade from '../../Images/Anmol/MilkMade.jpg'
+import BonTon from '../../Images/DishaFoods/Bon Ton.jpg'
+import BourBon from '../../Images/DishaFoods/BourBon.jpg'
+import Bro from '../../Images/DishaFoods/Bro.jpg'
+import BroPop from '../../Images/DishaFoods/BroPop.jpg'
+import ButterMate from '../../Images/DishaFoods/ButterMate.jpg'
+import ChocolateBiscuit from '../../Images/KamlaInternational/ChocolateBiscuit.jpg'
+import ChocolateChipCookies from '../../Images/KamlaInternational/ChocolateChipCookies.jpg'
+import CoconutCookies from '../../Images/KamlaInternational/CoconutCookies.jpg'
+import Glucose from '../../Images/KamlaInternational/Glucose.jpg'
+import MasalaBiscuit from '../../Images/KamlaInternational/MasalaBiscuit.jpg'
+
 
 
 
@@ -48,7 +59,7 @@ const BiscuitCompanyData = [
         figCaption: "1.1) Britannia Industries"
     },
     {
-        'title': ' 1.2) Parle G',
+        'title': ' 1.2) Parle ',
         'overview': " Headquartered in Mumbai, Parle Products is India's largest manufacturer of biscuits and confectionery, generating an impressive operating revenue of ₹15,568.49 crore in FY25.Biscuits account for over 50% to 70% of their total busines with their flagship brand Parle-G being the highest-selling biscuit brand in the world by volume.",
         "segment": "Biscuit",
         "annualturnoverInfo": "Parle Products is a multi-billion dollar enterprise. The company crossed $2 billion in annual revenues in FY22. In the financial year ending FY25, Parle Biscuits' (a major manufacturing subsidiary) operational revenue grew to ₹15,568.49 crore.",
@@ -88,44 +99,44 @@ const BiscuitCompanyData = [
         figCaption: "1.3) ITC Limited"
     },
     {
-        'title': '1.4) Priya Gold',
-        'overview': `Priyagold is a prominent Indian FMCG brand owned by Surya Food & Agro Ltd. established in 1992. It manufactures biscuits, cookies, cakes, and beverages. Known for its tagline, "Haq Se Maango," the company competes in the mass and premium segments through a vast retail distribution network.`,
+        'title': '1.4) Disha Foods Private Limited ',
+        'overview': `Founded in 1983 in Hyderabad (India), BakeMate is one of the world’s leading manufacturers and exporters of premium chocolates, biscuits, wafers, cookies, and confectioneries.`,
         "segment": "Biscuit",
-        "annualturnoverInfo": "Priyagold (owned by Surya Food & Agro Ltd.) operates as one of India's top FMCG companies.The brand generates an annual turnover of approximately ₹1,876 Crore (over $225 million).",
-        "marketshare": "The total Indian biscuit, cookies, and crackers market is approximately ₹1,16,706 crore,then Priya Gold’s estimated market size is ₹12,837 crore.Priyagold (Surya Foods) holds an estimated 11% to 15% market share in the Indian biscuit sector.Historically, Priyagold has been overwhelmingly popular in Northern and Central India (e.g., Uttar Pradesh and Delhi),where it boasts a localized market share upwards of (25%) in some segments, before expanding into South and East India.",
-        "totalIncome": "₹1,876 Cr.",
-        "netprofit": "₹119.79 Cr.",
-        "marketcapitalization": "₹12,837 Cr.",
-        "link": "/biscuit-companies/priyagold-images",
-        "ImageButtonTitle": "PriyaGold",
+        "annualturnoverInfo": "Disha Foods Private Limited (maker of the BakeMate brand) generates an annual revenue estimated between ₹100 crore to ₹500 crore ($12M - $60M USD). Operating out of Hyderabad, India, the company manufactures and exports biscuits, chocolates, and confectionery products to over 200 countries worldwide.",
+        "marketshare": "DISHA FOODS PRIVATE LIMITED's last Annual General Meeting (AGM) was held on Sep 30, 2024 as per records from Ministry of Corporate Affairs (MCA). DISHA FOODS PRIVATE LIMITED's authorised share capital is ₹4Cr and its paid up capital is ₹1.71Cr. ",
+        "totalIncome": "₹100 -500 Cr.",
+        "netprofit": "₹7-45 Cr.",
+        "marketcapitalization": "Does Not Trade on Stock Market.",
+        "link": "/biscuit-companies/disha-foods",
+        "ImageButtonTitle": "Disha-Foods",
         "images": [
-            ButterBite,
-            CheeseCracker,
-            CNC,
-            MarieLight,
-            SnacksZigZag,
+            BonTon,
+            BourBon,
+            Bro,
+            BroPop,
+            ButterMate
         ],
-        figCaption: "1.4) Priya Gold"
+        figCaption: "1.4) Disha-Foods"
     },
     {
-        'title': '1.5) Anmol Industries Limited',
-        'overview': "Anmol Industries Limited is indeed a major player in India's biscuit, cookie, and bakery sector. Founded in 1994, it has grown into one of the country's leading FMCG brands, manufacturing a vast portfolio of sweet, semi-sweet, cream, and healthy biscuits, as well as premium cookies, bar cakes, and rusks.It is the fourth-largest biscuit brand in India, with an annual turnover exceeding Rs. 1,600 crore and a footprint in over 34 countries.",
+        'title': '1.5) Kamla International',
+        'overview': "Kamala International Is A Manufacturers, Suppliers & Exporters of Glucose Biscuits, Cream Biscuits, Marie Biscuits, Nice Biscuits, Petit Beurre Biscuits, Bourbon Biscuits, Masala Biscuits, Chocolate Biscuits, Coconut Cookies, Cocoa Cookies, Chocolate Coconut Cookies & Chocolate Chip Cookies.",
         "segment": "Biscuit",
-        "annualturnoverInfo": "Anmol Industries Limited reports an overall annual turnover exceeding Rs. 1,650 crores. Because the biscuit division contributes approximately 97% to the company's total revenue, the annual turnover in the biscuit segment is estimated to be over Rs. 1,600 crores.",
-        "marketshare": "Anmol Industries Limited holds a solid 5% to 6% overall national market share, making it India's fourth-largest biscuit manufacturer. In its core strongholds of North and East India, the company captures a much higher regional market share of 10% to 12%",
-        "totalIncome": "₹1,162 Cr.",
-        "netprofit": "₹86 Cr.",
+        "annualturnoverInfo": "Kamla International (legally registered as Kamala International Exim Private Limited) generates approximately ₹81.2 Cr in annual operating revenue (US $50 Million to US $100 Million). The Hyderabad-based manufacturer and exporter of biscuits, wafers, and confectionery items handles a massive volume of international shipments globally.",
+        "marketshare": "Kamla International (Kamala International Exim Pvt Ltd) operates primarily as an export-focused manufacturer and trader. In the broader Indian biscuit market—dominated by giants like Britannia (approx. 38% share) and Parle (approx. 36% share)—Kamla International's market share is less than 1%.",
+        "totalIncome": "₹81.2 Cr.",
+        "netprofit": "₹3.5 Cr – ₹5 Cr.",
         "marketcapitalization": "Does Not Trade on Stock Market.",
-        "link": "/biscuit-companies/anmolindustries-images",
-        "ImageButtonTitle": "Anmol Indusries",
+        "link": "/biscuit-companies/kamla-international",
+        "ImageButtonTitle": "Kamla International",
         "images": [
-            Creemos,
-            DreamLite,
-            ETime,
-            MarieLight,
-            MilkMade
+            ChocolateBiscuit,
+            ChocolateChipCookies,
+            CoconutCookies,
+            Glucose,
+            MasalaBiscuit
         ],
-        figCaption: "1.5) Anmol Industries Limited"
+        figCaption: "1.5) Kamla International"
     }
 ]
 
