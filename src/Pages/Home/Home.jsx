@@ -5,12 +5,13 @@ import BiscuitProcess from "./BiscuitProcess.jsx";
 import ConfectioneryProcess from "./ConfectionaryProcess.jsx";
 import CompanyLogo from '../../assets/CompanyLogo.svg'
 import Footer from "../Footer/Footer.jsx";
+import Ingredients from "./Ingredients.jsx";
 
 const Home = () => {
 
     return (
         <>
-        <img src={CompanyLogo} className="mt-20 flex items-center mx-auto max-w-4xl h-20"/>
+            <img src={CompanyLogo} className="mt-20 flex items-center mx-auto max-w-4xl h-20" />
             <h1 className="mx-auto max-w-4xl  mt-0 text-3xl font-bold text-gray-900 sm:text-4xl  mb-10 text-center sm:mb-0">
                 All India Biscuits and Confectionery Manufacturers and Exporters Association
             </h1>
@@ -77,9 +78,10 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Ingredients />
             <BiscuitProcess />
             <ConfectioneryProcess />
-            <Footer/>
+            <Footer />
         </>
     )
 }
