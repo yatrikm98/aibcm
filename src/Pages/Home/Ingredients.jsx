@@ -2,7 +2,7 @@ const Ingredients = () => {
 
     return (
         <div className="mx-auto max-w-6xl rounded-2xl bg-white p-6 px-8">
-            <h2 className="text-2xl font-semibold text-gray-900 max-[850px]:text-center">
+            <h2 className="text-2xl font-semibold text-gray-900 max-[850px]:text-center text-center">
                 Ingredients
             </h2>
 
@@ -20,10 +20,51 @@ const Ingredients = () => {
                                 As per Indian Standard
                             </h4>
                             <ul className="mt-2 list-disc space-y-1 pl-5 text-gray-700">
-                                <li>Wheat flour (maida)</li>
-                                <li>Sugar</li>
-                                <li>Edible vegetable oil / fat </li>
-                                <li>Baking powder</li>
+                                <li>Whole wheat Meal</li>
+                                <li>Wheat Atta</li>
+                                <li>Semolina</li>
+                                <li>Wheat Bran </li>
+                                <li>Wheat and Maize germ</li>
+                                <li>Barley Powder</li>
+                                <li>Oat , besan , rice, malt, soya bean, Tapioca and Potato Flour</li>
+                                <li>Peanuts</li>
+                                <li>Peanut Butter</li>
+                                <li>Edible groundnut Flour</li>
+                                <li>Isolates and Concentrates</li>
+                                <li>Sweet Potato</li>
+                                <li>Arrowroot Starch</li>
+                                <li>Maize starch</li>
+                                <li>Rice Starch</li>
+                                <li>Casein</li>
+                                <li>Milk powderand its products</li>
+                                <li>Cheese</li>
+                                <li>Whey Soids</li>
+                                <li>Sugars</li>
+                                <li>Liquid Glucose</li>
+                                <li>Dextrose Monohydrate</li>
+                                <li>Jaggery and Khandsari</li>
+                                <li>Molasses</li>
+                                <li>lactose</li>
+                                <li>Malt extract</li>
+                                <li>Invert and golden syrup</li>
+                                <li>Honey</li>
+                                <li>Dessicated Coconut</li>
+                                <li>Dry and edible Fruits</li>
+                                <li>Pectin and Fruit Jams</li>
+                                <li>Ginger, Chilli Powder, Black pepper, saffron , Cardamom, Cumin</li>
+                                <li>Proteolytic and amylases, sodium bi sulphate and sodium metabisulphate.</li>
+                                <li>Flour improvers</li>
+                                <li>Baking powder, ammonium bicarbonate, sodium bi carbonate, ammonium carbonate.</li>
+                                <li>Protein and calium products.</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
                             </ul>
                         </div>
 
@@ -33,10 +74,40 @@ const Ingredients = () => {
                                 As per FSSR
                             </h4>
                             <ul className="mt-2 list-disc space-y-1 pl-5 text-gray-700">
-                                <li>Permitted food additives</li>
-                                <li>Approved emulsifiers</li>
-                                <li>Permitted colours</li>
-                                <li>Iodised salt</li>
+                                <li>Millets/Pulses/Legumes.</li>
+                                <li>Fats and oils</li>
+                                <li>Fat emulsions</li>
+                                <li>Baking Powder</li>
+                                <li>Sugar and sugar Products</li>
+                                <li>Edible Salt</li>
+                                <li>Salt Substitues</li>
+                                <li>Dairy Products</li>
+                                <li>Analogues</li>
+                                <li>Nitritive and Non-nutritive Sweeteners</li>
+                                <li>Honey</li>
+                                <li>Invert Sugar</li>
+                                <li>Jaggery</li>
+                                <li>Dextrose</li>
+                                <li>Edible Molasses</li>
+                                <li>Glucose Syrup</li>
+                                <li>Cocoa and Chocolates</li>
+                                <li>Tea and Coffee</li>
+                                <li>Chicory</li>
+                                <li>Cocounts and its Products</li>
+                                <li>Eggs and eggs products</li>
+                                <li>Gluten</li>
+                                <li>Nut and its products</li>
+                                <li>Malt and its Products</li>
+                                <li>Milk and its Products</li>
+                                <li>Oilseeds and its products</li>
+                                <li>Starches and Spices</li>
+                                <li>Flours and Condiments</li>
+                                <li>Herbs and there extracts</li>
+                                <li>Vinegar</li>
+                                <li>Edible seeds</li>
+                                <li>Protein Concentrates/isolates</li>
+                                <li>Yeast and its products</li>
+                                <li>Enzymes and Yeast</li>
                             </ul>
                         </div>
                     </div>
