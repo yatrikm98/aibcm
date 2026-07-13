@@ -111,7 +111,7 @@ const BiscuitCompanyData = [
         "ImageButtonTitle": "Disha-Foods",
         "images": [
             BonTon,
-            BourBon,
+            Bourbon,
             Bro,
             BroPop,
             ButterMate
