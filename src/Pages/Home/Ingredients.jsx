@@ -64,7 +64,7 @@ const Ingredients = () => {
                         {/* As per FSSR */}
                         <div>
                             <h4 className="text-sm font-semibold text-gray-900 ">
-                                As per FSSR
+                                As per FASSAI
                             </h4>
                             <ul className="mt-2 list-disc space-y-1 pl-5 text-gray-700">
                                 <li>Millets/Pulses.</li>
@@ -149,7 +149,7 @@ const Ingredients = () => {
                         {/* As per FSSR */}
                         <div>
                             <h4 className="text-sm font-semibold text-gray-900">
-                                As per FSSR
+                                As per FASSAI
                             </h4>
                             <ul className="mt-2 list-disc space-y-1 pl-5 text-gray-700">
                                 <li>Sugar,jaggery.</li>
