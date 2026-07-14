@@ -170,7 +170,7 @@ const About = () => {
                   <div className="mt-4 ">
                     <div>Retired additional director general of foreign trade Dgft and development commissioner sez.</div>
                     <span className="font-semibold ">Educational Details:-</span>
-                    <div >.BA.(Eco Hons)</div>
+                    <div >BA.(Eco Hons)</div>
                     <div>M.A. (Economics)</div>
                   </div>
                 </div>
