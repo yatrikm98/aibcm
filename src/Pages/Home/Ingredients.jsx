@@ -67,7 +67,7 @@ const Ingredients = () => {
                                 As per FSSR
                             </h4>
                             <ul className="mt-2 list-disc space-y-1 pl-5 text-gray-700">
-                                <li>Millets/Pulses/Legumes.</li>
+                                <li>Millets/Pulses.</li>
                                 <li>Fats and oils</li>
                                 <li>Fat emulsions</li>
                                 <li>Baking Powder</li>
@@ -98,7 +98,7 @@ const Ingredients = () => {
                                 <li>Herbs and there extracts</li>
                                 <li>Vinegar</li>
                                 <li>Edible seeds</li>
-                                <li>Protein Concentrates/isolates</li>
+                                <li>Protein</li>
                                 <li>Yeast and its products</li>
                                 <li>Enzymes and Yeast</li>
                             </ul>
@@ -152,7 +152,7 @@ const Ingredients = () => {
                                 As per FSSR
                             </h4>
                             <ul className="mt-2 list-disc space-y-1 pl-5 text-gray-700">
-                                <li>Sugar,jaggery,Bura Sugar,honey ,Liquid Glucose.</li>
+                                <li>Sugar,jaggery.</li>
                                 <li>Milka nd Milk Products.</li>
                                 <li>Edible Molasses.</li>
                                 <li>Edible Starches</li>

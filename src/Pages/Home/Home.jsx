@@ -56,10 +56,11 @@ const Home = () => {
                                 Biscuits
                             </h4>
                             <ul className="mt-3 list-disc space-y-1 pl-5 text-gray-700">
-                                <li>Cookies</li>
+                                <li>Sweet</li>
+                                <li>Semi-sweet</li>
                                 <li>Crackers</li>
-                                <li>Cream biscuits</li>
-                                <li>Digestive biscuits</li>
+                                <li>Cookies</li>
+                                <li>Speciality biscuits</li>
                             </ul>
                         </div>
 
