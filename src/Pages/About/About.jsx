@@ -120,7 +120,7 @@ const About = () => {
                     Kamlesh Mulchand Soni
                   </h3>
 
-                  <div className="mt-4 flex-1 break-words text-justify text-gray-700">
+                  <div className="mt-4 flex-1 ">
                     <span className="font-semibold">Educational Details:-</span>
                     <div>Ms, BSc</div>
                   </div>
@@ -143,8 +143,9 @@ const About = () => {
                     Sharad Meshram
                   </h3>
 
-                  <div className="mt-4 flex-1 break-words text-justify text-gray-700">
-                    <span className="font-semibold">Educational Details:-</span>
+                  <div className="mt-4 flex-1 ">
+                    <div>Retired Commissioner of Customs and Gst</div>
+                    <span className="font-semibold break-words text-justify">Educational Details:-</span>
                     <div>M.A. (Public Administration)</div>
                   </div>
                 </div>
@@ -166,9 +167,10 @@ const About = () => {
                     Ashish Jha
                   </h3>
 
-                  <div className="mt-4 flex-1 break-words text-justify text-gray-700">
-                    <span className="font-semibold">Educational Details:-</span>
-                    <div>B.A.(Eco Hons)</div>
+                  <div className="mt-4 ">
+                    <div>Retired additional director general of foreign trade Dgft and development commissioner sez.</div>
+                    <span className="font-semibold ">Educational Details:-</span>
+                    <div >.BA.(Eco Hons)</div>
                     <div>M.A. (Economics)</div>
                   </div>
                 </div>
