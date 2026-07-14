@@ -48,7 +48,7 @@ const Company = ({ data }) => {
                             <div className="mt-5 grid gap-4 sm:grid-cols-2">
                                 <div className="rounded-2xl bg-blue-50 p-4">
                                     <div className="text-sm font-medium text-blue-700">
-                                        Total Income
+                                        Total Revenue
                                     </div>
                                     <div className="mt-1 text-2xl font-bold text-gray-900">
                                         {data.totalIncome}

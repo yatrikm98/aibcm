@@ -16,7 +16,7 @@ const Ingredients = () => {
                     <div className="mt-4 grid gap-4 grid-cols-2">
                         {/* As per Indian Standard */}
                         <div>
-                            <h4 className="text-sm font-semibold text-gray-900 text-center">
+                            <h4 className="text-sm font-semibold text-gray-900 ">
                                 As per Indian Standard
                             </h4>
                             <ul className="mt-2 list-disc space-y-1 pl-5 text-gray-700">
@@ -36,41 +36,34 @@ const Ingredients = () => {
                                 <li>Maize starch</li>
                                 <li>Rice Starch</li>
                                 <li>Casein</li>
-                                <li>Milk powderand its products</li>
+                                <li>Milk powder and its products</li>
                                 <li>Cheese</li>
                                 <li>Whey Soids</li>
                                 <li>Sugars</li>
                                 <li>Liquid Glucose</li>
                                 <li>Dextrose Monohydrate</li>
                                 <li>Jaggery and Khandsari</li>
-                                <li>Molasses</li>
                                 <li>lactose</li>
                                 <li>Malt extract</li>
                                 <li>Invert and golden syrup</li>
-                                <li>Honey</li>
                                 <li>Dessicated Coconut</li>
-                                <li>Dry and edible Fruits</li>
+                                <li>Dry Fruits and edible Fruits</li>
                                 <li>Pectin and Fruit Jams</li>
                                 <li>Ginger, Chilli Powder, Black pepper, saffron , Cardamom, Cumin</li>
                                 <li>Proteolytic and amylases, sodium bi sulphate and sodium metabisulphate.</li>
                                 <li>Flour improvers</li>
                                 <li>Baking powder, ammonium bicarbonate, sodium bi carbonate, ammonium carbonate.</li>
-                                <li>Protein and calium products.</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>Protein and calcium products.</li>
+                                <li>Potassium Iodide</li>
+                                <li>L-cysteine</li>
+                                <li>Sodium sulphite and metabisulphite</li>
+                                <li>Acetic or lactic acid </li>
                             </ul>
                         </div>
 
                         {/* As per FSSR */}
                         <div>
-                            <h4 className="text-sm font-semibold text-gray-900 text-center">
+                            <h4 className="text-sm font-semibold text-gray-900 ">
                                 As per FSSR
                             </h4>
                             <ul className="mt-2 list-disc space-y-1 pl-5 text-gray-700">
@@ -162,7 +155,6 @@ const Ingredients = () => {
                                 <li>Sugar,jaggery,Bura Sugar,honey ,Liquid Glucose.</li>
                                 <li>Milka nd Milk Products.</li>
                                 <li>Edible Molasses.</li>
-                                <li>Malt Extracts</li>
                                 <li>Edible Starches</li>
                                 <li>Edible Oils and Fats</li>
                                 <li>Edible Common Salts</li>
@@ -188,7 +180,7 @@ const Ingredients = () => {
                                 <li>Isomaltulose at 50%.</li>
                                 <li>Eucalyptus oil</li>
                                 <li>Camphor, Peeper mint oil</li>
-                                <li>Menthol Oil crystals</li>    
+                                <li>Menthol Oil crystals</li>
                             </ul>
                         </div>
                     </div>
