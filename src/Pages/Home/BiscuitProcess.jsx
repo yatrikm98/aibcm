@@ -5,7 +5,8 @@ import Baking from '../../Images/BiscuitProcess/Baking.jpg'
 import Cooling from '../../Images/BiscuitProcess/Cooling.jpg'
 import Forming from '../../Images/BiscuitProcess/Forming.jpg'
 import Mixing from '../../Images/BiscuitProcess/Mixing.jpg'
-
+import ParleG from '../../videos/ParleG.mp4'
+import Biscuit from '../../videos/Biscuit.mp4'
 
 
 
@@ -200,25 +201,27 @@ const BiscuitProcess = () => {
                     </div>
                 </div>
             </div>
-            <div className="mx-auto flex justify-around max-w-6xl mt-5 max-[1150px]:flex-col max-[1150px]:items-center">
-                <iframe
-                    className="aspect-video w-full max-w-lg max-[1150px]:max-w-4xl"
-                    src="https://www.youtube.com/embed/P9cWLC2r6cc?si=Ad-CtAzjV573DH7i"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                />
-                <iframe
-                    className="aspect-video w-full max-w-lg max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
-                    src="https://www.youtube.com/embed/BqHaH-85nwo?si=ilS_DVBWyZYAvs5D"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen>
-                </iframe>
+            <div className="mx-auto max-w-6xl">
+            <div className="flex justify-around max-[1150px]:flex-col max-[1150px]:items-center mt-2">
+                <div>
+                    <span>Parle G :-</span>
+                    <video
+                        className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
+                        src={ParleG}
+                        controls
+                        playsInline
+                    />
+                </div>
+                <div>
+                    <span>Biscuit :-</span>
+                    <video
+                        className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
+                        src={Biscuit}
+                        controls
+                        playsInline
+                    />
+                </div>
+            </div>
             </div>
             <div className="text-center mt-3 font-semibold text-[16px]">How are Biscuits Made.</div>
         </div>

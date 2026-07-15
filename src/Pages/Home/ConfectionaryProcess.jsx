@@ -5,6 +5,11 @@ import Ingredients from '../../Images/ConfectionaryProcess/Ingredients.jpg'
 import Blending from '../../Images/ConfectionaryProcess/Blending.jpg'
 import Packing from '../../Images/ConfectionaryProcess/Packing.jpg'
 import Shaping from '../../Images/ConfectionaryProcess/Shaping.jpg'
+import BubbleGum from '../../videos/BubbleGum.mp4'
+import Candy from '../../videos/Candy.mp4'
+import Chocolate from '../../videos/Chocolate.mp4'
+import Melody from '../../videos/Melody.mp4'
+
 
 
 const ConfectioneryProcess = () => {
@@ -232,49 +237,44 @@ const ConfectioneryProcess = () => {
             </div>
             <div className="mx-auto  max-w-6xl mt-5 ">
                 <div className="flex justify-around max-[1150px]:flex-col max-[1150px]:items-center">
-                    <iframe
-                        className="aspect-video w-full max-w-lg max-[1150px]:max-w-4xl"
-                        src="https://www.youtube.com/embed/2kttVyakHN4?si=FbnhNjSJW7bAqGol"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-
-                    </iframe>
-                    <iframe
-                        className="aspect-video w-full max-w-lg max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
-                        src="https://www.youtube.com/embed/V6ze-6LBhhg?si=7wb46h220vwjqxHa"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                    </iframe>
+                    <div>
+                        <span>BubbleGum :- </span>
+                        <video
+                            className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:max-w-4xl"
+                            src={BubbleGum}
+                            controls
+                            playsInline
+                        />
+                    </div>
+                    <div>
+                        <span>Candy :-</span>
+                        <video
+                            className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
+                            src={Candy}
+                            controls
+                            playsInline
+                        />
+                    </div>
                 </div>
                 <div className="flex justify-around max-[1150px]:flex-col max-[1150px]:items-center mt-2">
-
-                    <iframe
-                        className="aspect-video w-full max-w-lg max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
-                        src="https://www.youtube.com/embed/xPe1jMuX32s?si=AUeTzKMKvpOfEQUN"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; 
-                autoplay; clipboard-write; 
-                encrypted-media; gyroscope; p
-                icture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
-
-                    <iframe
-                        className="aspect-video w-full max-w-lg max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
-                        src="https://www.youtube.com/embed/_As1WwlSe5k?si=x0wo0T3aetAD-EgF"
-                        title="YouTube video player" f
-                        rameborder="0"
-                        allow="accelerometer; 
-                    autoplay; clipboard-write;
-                     encrypted-media; gyroscope; 
-                     picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen></iframe>
+                    <div>
+                        <span>Chocolate :-</span>
+                        <video
+                            className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
+                            src={Chocolate}
+                            controls
+                            playsInline
+                        />
+                    </div>
+                    <div>
+                        <span>Melody :-</span>
+                        <video
+                            className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
+                            src={Melody}
+                            controls
+                            playsInline
+                        />
+                    </div>
                 </div>
 
             </div>
