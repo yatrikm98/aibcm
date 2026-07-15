@@ -205,7 +205,7 @@ const BiscuitProcess = () => {
                     <span>Parle G :-</span>
                     <video
                         className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
-                        src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784111010/Melody_jaylkz.mp4"
+                        src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784110997/ParleG_d3hczp.mp4"
                         controls
                         playsInline
                     />
@@ -214,7 +214,7 @@ const BiscuitProcess = () => {
                     <span>Biscuit :-</span>
                     <video
                         className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
-                        src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784111010/Melody_jaylkz.mp4"
+                        src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784111007/Biscuit_gtye9l.mp4"
                         controls
                         playsInline
                     />

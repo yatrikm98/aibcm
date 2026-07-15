@@ -237,7 +237,7 @@ const ConfectioneryProcess = () => {
                         <span>BubbleGum :- </span>
                         <video
                             className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:max-w-4xl"
-                            src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784111010/Melody_jaylkz.mp4"
+                            src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784110977/BubbleGum_gs9h3r.mp4"
                             controls
                             playsInline
                         />
@@ -246,7 +246,7 @@ const ConfectioneryProcess = () => {
                         <span>Candy :-</span>
                         <video
                             className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
-                            src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784111010/Melody_jaylkz.mp4"
+                            src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784110977/Candy_paz4eb.mp4"
                             controls
                             playsInline
                         />
@@ -257,7 +257,7 @@ const ConfectioneryProcess = () => {
                         <span>Chocolate :-</span>
                         <video
                             className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
-                            src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784111010/Melody_jaylkz.mp4"
+                            src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784110979/Chocolate_j5j4d3.mp4"
                             controls
                             playsInline
                         />
