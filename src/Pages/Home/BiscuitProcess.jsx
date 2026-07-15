@@ -5,8 +5,6 @@ import Baking from '../../Images/BiscuitProcess/Baking.jpg'
 import Cooling from '../../Images/BiscuitProcess/Cooling.jpg'
 import Forming from '../../Images/BiscuitProcess/Forming.jpg'
 import Mixing from '../../Images/BiscuitProcess/Mixing.jpg'
-import ParleG from '../../videos/ParleG.mp4'
-import Biscuit from '../../videos/Biscuit.mp4'
 
 
 
@@ -207,7 +205,7 @@ const BiscuitProcess = () => {
                     <span>Parle G :-</span>
                     <video
                         className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
-                        src={ParleG}
+                        src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784111010/Melody_jaylkz.mp4"
                         controls
                         playsInline
                     />
@@ -216,7 +214,7 @@ const BiscuitProcess = () => {
                     <span>Biscuit :-</span>
                     <video
                         className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
-                        src={Biscuit}
+                        src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784111010/Melody_jaylkz.mp4"
                         controls
                         playsInline
                     />

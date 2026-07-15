@@ -5,10 +5,6 @@ import Ingredients from '../../Images/ConfectionaryProcess/Ingredients.jpg'
 import Blending from '../../Images/ConfectionaryProcess/Blending.jpg'
 import Packing from '../../Images/ConfectionaryProcess/Packing.jpg'
 import Shaping from '../../Images/ConfectionaryProcess/Shaping.jpg'
-import BubbleGum from '../../videos/BubbleGum.mp4'
-import Candy from '../../videos/Candy.mp4'
-import Chocolate from '../../videos/Chocolate.mp4'
-import Melody from '../../videos/Melody.mp4'
 
 
 
@@ -241,7 +237,7 @@ const ConfectioneryProcess = () => {
                         <span>BubbleGum :- </span>
                         <video
                             className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:max-w-4xl"
-                            src={BubbleGum}
+                            src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784111010/Melody_jaylkz.mp4"
                             controls
                             playsInline
                         />
@@ -250,7 +246,7 @@ const ConfectioneryProcess = () => {
                         <span>Candy :-</span>
                         <video
                             className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
-                            src={Candy}
+                            src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784111010/Melody_jaylkz.mp4"
                             controls
                             playsInline
                         />
@@ -261,7 +257,7 @@ const ConfectioneryProcess = () => {
                         <span>Chocolate :-</span>
                         <video
                             className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
-                            src={Chocolate}
+                            src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784111010/Melody_jaylkz.mp4"
                             controls
                             playsInline
                         />
@@ -270,7 +266,7 @@ const ConfectioneryProcess = () => {
                         <span>Melody :-</span>
                         <video
                             className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
-                            src={Melody}
+                            src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784111010/Melody_jaylkz.mp4"
                             controls
                             playsInline
                         />
