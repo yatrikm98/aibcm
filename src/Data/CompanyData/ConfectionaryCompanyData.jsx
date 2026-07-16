@@ -32,7 +32,6 @@ import MarsWrigley from '../../CompanyLogos/Mars-Wrigeley.jpg'
 
 const ConfectionaryCompanyData = [
     {
-        'srno':"1)",
         'title': ' Mondelez India Foods Private Limited',
         'overview': "Mondelez India Foods Private Limited (formerly Cadbury India Limited) is a leading FMCG company specializing in snacks, beverages, and confectionery. Generating an annual revenue of approximately ₹12,503 crore, it dominates the Indian chocolate market with iconic brands like Cadbury Dairy Milk, Oreo, Bournvita, and Tang.",
         "segment": "Confectionary",
@@ -54,7 +53,6 @@ const ConfectionaryCompanyData = [
         logo:MondelezIndia
     },
     {
-        'srno':"2)",
         'title': ' Perfetti Van Melle India',
         'overview': "Perfetti Van Melle India (PVMI) is the Indian subsidiary of the global confectionery giant Perfetti Van Melle.Entering the Indian market in 1994, PVMI has grown to capture close to 30% of the country's confectionery market, becoming a household name with popular brands like Alpenliebe, Center Fresh, and Mentos.",
         "segment": "Confectionary",
@@ -76,7 +74,6 @@ const ConfectionaryCompanyData = [
         logo:PErfettiVenMelle
     },
     {
-        'srno':"3)",
         'title': ' Nestle India',
         'overview': "Nestlé India is a subsidiary of the Swiss multinational FMCG giant, Nestlé S.A.Headquartered in Gurgaon, Haryana, it operates 9 manufacturing facilities across India and offers an extensive portfolio covering food, beverages, chocolate, and nutrition products.Nestlé India is highly profitable and maintains a strong financial standing, operating as a nearly debt-free entity with robust equity returns.",
         "segment": "Confectionary",
@@ -98,7 +95,6 @@ const ConfectionaryCompanyData = [
         logo:Nestle
     },
     {
-        "srno":"4)",
         'title': ' Parle Products',
         'overview': "Parle Products, one of India's largest FMCG and confectionery conglomerates, commands a significant ~15% share of the country's total confectionery market. Renowned for affordable, high-quality, and nostalgic treats, its sweet and candy portfolio spans hard-boiled candies, chewy toffees, eclairs, and fun novelty sweets.",
         "segment": "Confectionary",
@@ -120,7 +116,6 @@ const ConfectionaryCompanyData = [
         logo:Parle
     },
     {
-        "srno":"5)",
         'title': ' Mars Wrigley',
         'overview': "Mars Wrigley India is the rapidly growing Indian snacking and confectionery division of the global family-owned business, Mars, Incorporated. Operating in India since 2002, the company has a strong footprint across chocolates, confections, and chewing gums, employing over 1,100 associates nationwide.",
         "segment": "Confectionary",

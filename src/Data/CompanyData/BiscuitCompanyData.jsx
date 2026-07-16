@@ -45,7 +45,6 @@ import KamlaInternational from '../../CompanyLogos/kamalaInternational.webp'
 
 const BiscuitCompanyData = [
     {
-        "srno": "1)",
         "title": "Britannia Industries",
         'overview': "Britannia Industries is India's largest biscuit and confectioner company, with total revenue reaching ₹19,375.62 crore in FY 2025-26. The biscuit segment is the company's core driver,accounting for roughly 80% of total revenue and making it the dominant leader in India's organized biscuit market.",
         "segment": "Biscuit",
@@ -67,7 +66,6 @@ const BiscuitCompanyData = [
         logo: Britania
     },
     {
-        "srno": "2)",
         'title': ' Parle ',
         'overview': " Headquartered in Mumbai, Parle Products is India's largest manufacturer of biscuits and confectionery, generating an impressive operating revenue of ₹15,568.49 crore in FY25.Biscuits account for over 50% to 70% of their total busines with their flagship brand Parle-G being the highest-selling biscuit brand in the world by volume.",
         "segment": "Biscuit",
@@ -89,7 +87,6 @@ const BiscuitCompanyData = [
         logo: Parle
     },
     {
-        'srno': "3)",
         'title': ' ITC Limited',
         'overview': " ITC’s branded packaged foods business—which includes the Sunfeast biscuit range, Aashirvaad atta, and YiPPee! noodles—is a massive growth driver. Generating well over ₹73,465 crores in revenue, ITC’s overall food division is the second-largest packaged foods company in India by sales.In the biscuit sector specifically, ITC is the established market leader in the cream segment and commands around 10–12% of the overall Indian biscuit market.",
         "segment": "Biscuit",
@@ -111,7 +108,6 @@ const BiscuitCompanyData = [
         logo: ITCLimited
     },
     {
-        'srno': "4)",
         'title': 'Disha Foods Private Limited ',
         'overview': `Founded in 1983 in Hyderabad (India), BakeMate is one of the world’s leading manufacturers and exporters of premium chocolates, biscuits, wafers, cookies, and confectioneries.`,
         "segment": "Biscuit",
@@ -133,7 +129,6 @@ const BiscuitCompanyData = [
         logo:DishaFoods
     },
     {
-        'srno':"5)",
         'title': ' Kamla International',
         'overview': "Kamala International Is A Manufacturers, Suppliers & Exporters of Glucose Biscuits, Cream Biscuits, Marie Biscuits, Nice Biscuits, Petit Beurre Biscuits, Bourbon Biscuits, Masala Biscuits, Chocolate Biscuits, Coconut Cookies, Cocoa Cookies, Chocolate Coconut Cookies & Chocolate Chip Cookies.",
         "segment": "Biscuit",

@@ -202,7 +202,7 @@ const BiscuitProcess = () => {
             <div className="mx-auto max-w-6xl">
             <div className="flex justify-around gap-6 max-[1150px]:flex-col max-[1150px]:items-center mt-2">
                 <div className="mt-6 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-200">
-                    <span className="block text-center font-semibold text-gray-900">Parle G :-</span>
+                    <span className="block text-center font-semibold text-gray-900">Parle G </span>
                     <video
                         className="mt-3 aspect-video w-full max-w-lg rounded-xl max-[1150px]:max-w-4xl"
                         src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784110997/ParleG_d3hczp.mp4"
@@ -211,7 +211,7 @@ const BiscuitProcess = () => {
                     />
                 </div>
                 <div className="mt-6 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-200">
-                    <span className="block text-center font-semibold text-gray-900">Biscuit :-</span>
+                    <span className="block text-center font-semibold text-gray-900">Biscuit </span>
                     <video
                         className="mt-3 aspect-video w-full max-w-lg rounded-xl max-[1150px]:max-w-4xl"
                         src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784111007/Biscuit_gtye9l.mp4"

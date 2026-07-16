@@ -8,6 +8,19 @@ import Footer from "../Footer/Footer.jsx";
 import Ingredients from "./Ingredients.jsx";
 import Melody from '../../Images/Melody.avif'
 import Wallpaper from '../../Images/Wallpaper.png'
+import Cookies from '../../BiscuitLogos/Cookies.avif'
+import Crackers from '../../BiscuitLogos/Crackers.avif'
+import SemiSweetBiscuit from '../../BiscuitLogos/SemiSweetBiscuit.jpg'
+import SweetBiscuit from '../../BiscuitLogos/SweetBiscuit.jpg'
+import SpecialityBiscuit from '../../BiscuitLogos/SpecialityBiscuits.jpg'
+import Candies from '../../Confectionery-Logos/Candies.avif'
+import ChewingGum from '../../Confectionery-Logos/ChewingGum.webp'
+import Chocolate from '../../Confectionery-Logos/Chocolate.jpg'
+import Toffies from '../../Confectionery-Logos/Toffies.jpg'
+
+
+
+
 
 const Home = () => {
 
@@ -73,7 +86,7 @@ const Home = () => {
 
                 <div className="mt-">
                     <h3 className="text-xl font-semibold text-gray-900 max-[850px]:text-center">
-                        Examples :-
+                        Examples
                     </h3>
 
                     <div className="mt-4 grid gap-6 sm:grid-cols-2">
@@ -83,11 +96,37 @@ const Home = () => {
                                 Biscuits
                             </h4>
                             <ul className="mt-3 list-disc space-y-1 pl-5 text-gray-700">
-                                <li>Sweet</li>
-                                <li>Semi-sweet</li>
-                                <li>Crackers</li>
-                                <li>Cookies</li>
-                                <li>Speciality biscuits</li>
+                                <li>
+                                    <span className="inline-flex items-center gap-2 align-middle text-lg">
+                                        Sweet
+                                        <img src={SweetBiscuit} className="h-10 w-auto rounded" />
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="inline-flex items-center gap-2 align-middle text-lg">
+                                        Semi-sweet
+                                        <img src={SemiSweetBiscuit} className="h-10 w-auto rounded" />
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="inline-flex items-center gap-2 align-middle text-lg">
+                                        Crackers
+                                        <img src={Crackers} className="h-10 w-auto rounded" />
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="inline-flex items-center gap-2 align-middle text-lg">
+                                        Cookies
+                                        <img src={Cookies} className="h-10 w-auto rounded" />
+                                    </span>
+
+                                </li>
+                                <li>
+                                    <span className="inline-flex items-center gap-2 align-middle text-lg">
+                                        Speciality biscuits
+                                        <img src={SpecialityBiscuit} className="h-10 w-auto rounded" />
+                                    </span>
+                                </li>
                             </ul>
                         </div>
 
@@ -97,10 +136,31 @@ const Home = () => {
                                 Confectionery
                             </h4>
                             <ul className="mt-3 list-disc space-y-1 pl-5 text-gray-700">
-                                <li>Chocolates</li>
-                                <li>Candies</li>
-                                <li>Toffees</li>
-                                <li>Chewing gum</li>
+                                <li>
+
+                                    <span className="inline-flex items-center gap-2 align-middle text-lg">
+                                        Chocolates
+                                        <img src={Chocolate} className="h-10 w-auto rounded" />
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="inline-flex items-center gap-2 align-middle text-lg">
+                                        Candies
+                                        <img src={Candies} className="h-10 w-auto rounded" />
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="inline-flex items-center gap-2 align-middle text-lg">
+                                        Toffees
+                                        <img src={Toffies} className="h-10 w-auto rounded" />
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="inline-flex items-center gap-2 align-middle text-lg">
+                                        Chewing gum
+                                        <img src={ChewingGum} className="h-10 w-auto rounded" />
+                                    </span>
+                                </li>
                             </ul>
                         </div>
                     </div>

@@ -1,17 +1,23 @@
 import { useState } from "react";
 
-const COLLAPSED_HEIGHT = 618;
+const COLLAPSED_HEIGHT = 625;
 
-const IngredientColumn = ({ title, items }) => (
+const IngredientColumn = ({ title, items, expanded }) => (
     <div>
         <h4 className="text-sm font-semibold text-gray-900">
             {title}
         </h4>
-        <ul className="mt-2 list-disc space-y-1 pl-5 text-gray-700">
-            {items.map((item, index) => (
-                <li key={index}>{item}</li>
-            ))}
-        </ul>
+
+        <div
+            className="overflow-hidden"
+            style={{ maxHeight: expanded ? "none" : `${COLLAPSED_HEIGHT}px` }}
+        >
+            <ul className="mt-2 list-disc space-y-1 pl-5 text-gray-700">
+                {items.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
+        </div>
     </div>
 );
 
@@ -24,15 +30,13 @@ const IngredientCard = ({ title, titleColor, columns }) => {
                 {title}
             </h3>
 
-            <div
-                className="mt-4 grid grid-cols-2 gap-4 overflow-hidden"
-                style={{ maxHeight: expanded ? "none" : `${COLLAPSED_HEIGHT}px` }}
-            >
+            <div className="mt-4 grid grid-cols-2 items-start gap-4">
                 {columns.map((column, index) => (
                     <IngredientColumn
                         key={index}
                         title={column.title}
                         items={column.items}
+                        expanded={expanded}
                     />
                 ))}
             </div>
@@ -195,7 +199,7 @@ const Ingredients = () => {
                 Ingredients
             </h2>
 
-            <div className="mt-6 grid gap-6 sm:grid-cols-2">
+            <div className="mt-6 grid items-start gap-6 sm:grid-cols-2">
                 <IngredientCard
                     title="Biscuit Ingredients"
                     titleColor="text-blue-600"

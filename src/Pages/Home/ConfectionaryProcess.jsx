@@ -234,7 +234,7 @@ const ConfectioneryProcess = () => {
             <div className="mx-auto  max-w-6xl mt-24 ">
                 <div className="flex justify-around gap-6 max-[1150px]:flex-col max-[1150px]:items-center">
                     <div className="mt-6 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-200">
-                        <span className="block text-center font-semibold text-gray-900">BubbleGum :- </span>
+                        <span className="block text-center font-semibold text-gray-900">BubbleGum  </span>
                         <video
                             className="mt-3 aspect-video w-full max-w-lg rounded-xl max-[1150px]:max-w-4xl"
                             src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784110977/BubbleGum_gs9h3r.mp4"
@@ -243,7 +243,7 @@ const ConfectioneryProcess = () => {
                         />
                     </div>
                     <div className="mt-6 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-200">
-                        <span className="block text-center font-semibold text-gray-900">Candy :-</span>
+                        <span className="block text-center font-semibold text-gray-900">Candy </span>
                         <video
                             className="mt-3 aspect-video w-full max-w-lg rounded-xl max-[1150px]:max-w-4xl"
                             src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784110977/Candy_paz4eb.mp4"
@@ -254,7 +254,7 @@ const ConfectioneryProcess = () => {
                 </div>
                 <div className="flex justify-around gap-6 max-[1150px]:flex-col max-[1150px]:items-center mt-2">
                     <div className="mt-6 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-200">
-                        <span className="block text-center font-semibold text-gray-900">Chocolate :-</span>
+                        <span className="block text-center font-semibold text-gray-900">Chocolate </span>
                         <video
                             className="mt-3 aspect-video w-full max-w-lg rounded-xl max-[1150px]:max-w-4xl"
                             src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784110979/Chocolate_j5j4d3.mp4"
@@ -263,7 +263,7 @@ const ConfectioneryProcess = () => {
                         />
                     </div>
                     <div className="mt-6 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-200">
-                        <span className="block text-center font-semibold text-gray-900">Melody :-</span>
+                        <span className="block text-center font-semibold text-gray-900">Melody </span>
                         <video
                             className="mt-3 aspect-video w-full max-w-lg rounded-xl max-[1150px]:max-w-4xl"
                             src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784111010/Melody_jaylkz.mp4"
