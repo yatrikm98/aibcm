@@ -16,24 +16,28 @@ const Home = () => {
             {/* Wallpaper background behind the text */}
             <div className="relative">
                 <div
-                    className="pointer-events-none absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat"
+                    className="pointer-events-none absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-40"
                     style={{ backgroundImage: `url(${Wallpaper})` }}
                 />
                 <img src={CompanyLogo} className="mt-20 flex items-center mx-auto max-w-4xl h-20" />
-                <h1 className="italic mx-auto max-w-4xl  mt-0 text-3xl font-bold text-gray-900 sm:text-4xl  mb-10 text-center sm:mb-0">
+                <h1 className="italic mx-auto max-w-4xl  mt-0 text-3xl font-bold text-gray-900 sm:text-4xl  mb-10 text-center sm:mb-6">
                     All India Biscuits and Confectionery Manufacturers and Exporters Association
                 </h1>
 
-                {/* Two-column: left = Melody image + Manufacturers, right = Introduction */}
-                <div className="mx-auto max-w-6xl flex flex-col gap-6 px-4 md:flex-row md:items-start">
-                    {/* Left column */}
-                    <div className="flex-1 space-y-6">
+                {/* Two-column: left = Melody image, right = Manufacturers + Introduction */}
+                <div className="mx-auto max-w-6xl flex flex-col gap-4 px-4 md:flex-row md:items-stretch md:h-[36rem]">
+                    {/* Left column: Melody image */}
+                    <div className="flex-1">
                         <img
                             src={Melody}
                             alt="Melody"
-                            className="mx-auto h-72 w-auto max-w-full rounded-2xl object-contain sm:h-80 md:h-96"
+                            className="h-auto max-h-full w-full rounded-2xl object-contain sm:h-44 md:h-full"
                         />
-                        <div className="rounded-2xl bg-white p-6">
+                    </div>
+
+                    {/* Right column: Manufacturers + Introduction */}
+                    <div className="flex-1 flex flex-col gap-4">
+                        <div className="flex-1 overflow-auto rounded-2xl border border-gray-200 bg-white p-4">
                             <h2 className="italic text-2xl font-semibold text-gray-900 max-[850px]:text-center">
                                 Biscuits and Confectionery Manufacturers
                             </h2>
@@ -50,11 +54,7 @@ const Home = () => {
                                 </ul>
                             </div>
                         </div>
-                    </div>
-
-                    {/* Right column: Introduction */}
-                    <div className="flex-1">
-                        <div className="rounded-2xl bg-white p-6">
+                        <div className="flex-1 rounded-2xl border border-gray-200 bg-white p-4">
                             <h2 className="italic mb-4 text-2xl font-semibold text-gray-900 max-[850px]:text-center">
                                 Introduction
                             </h2>

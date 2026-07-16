@@ -15,6 +15,24 @@ const Contact = () => {
 
                 {/* </div> */}
 
+                {/* Phone (left) and Email (right) */}
+                <div className="mt-6 flex w-full flex-col gap-4 sm:flex-row">
+                    <a
+                        href="tel:01141500409"
+                        className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-white p-5 text-center shadow-sm ring-1 ring-slate-200 transition hover:bg-orange-400 hover:ring-orange-400"
+                    >
+                        <span className="font-semibold text-slate-900">Telephone:</span>
+                        <span className="text-slate-700">011-41500409</span>
+                    </a>
+                    <a
+                        href="mailto:aibcmea@gmail.com"
+                        className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-white p-5 text-center shadow-sm ring-1 ring-slate-200 transition hover:bg-orange-400 hover:ring-orange-400"
+                    >
+                        <span className="font-semibold text-slate-900">Mail:</span>
+                        <span className="text-slate-700">aibcmea@gmail.com</span>
+                    </a>
+                </div>
+
                 {/* Big map section */}
                 <div className="mt-6 flex-1">
                     <div className="overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200 min-[1200px]:h-[80vh] max-[1199px]:h-[80vh]">

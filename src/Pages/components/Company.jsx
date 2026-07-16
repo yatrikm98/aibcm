@@ -10,8 +10,14 @@ const Company = ({ data }) => {
             <div className="bg-gray-50 px-4 py-10 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-6xl">
                     <div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-gray-200 sm:p-8">
-                        <h1 className="text-3xl font-bold text-orange-400 sm:text-2xl">
-                            {data.title}
+                        <h1 className="flex items-center justify-center gap-3 text-3xl font-bold text-orange-400 sm:text-2xl text-center">
+                            <span>{data.srno}</span>
+                            <img
+                                src={data.logo}
+                                alt={data.title}
+                                className="h-14 w-14 shrink-0 rounded-md object-contain sm:h-16 sm:w-16"
+                            />
+                            <span>{data.title}</span>
                         </h1>
                         <p className="mt-4 text-base leading-8 text-gray-700 text-[16px]">
                             {data.overview}

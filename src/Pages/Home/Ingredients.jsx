@@ -1,3 +1,192 @@
+import { useState } from "react";
+
+const COLLAPSED_HEIGHT = 618;
+
+const IngredientColumn = ({ title, items }) => (
+    <div>
+        <h4 className="text-sm font-semibold text-gray-900">
+            {title}
+        </h4>
+        <ul className="mt-2 list-disc space-y-1 pl-5 text-gray-700">
+            {items.map((item, index) => (
+                <li key={index}>{item}</li>
+            ))}
+        </ul>
+    </div>
+);
+
+const IngredientCard = ({ title, titleColor, columns }) => {
+    const [expanded, setExpanded] = useState(false);
+
+    return (
+        <div className="rounded-xl border border-gray-200 p-4">
+            <h3 className={`text-lg font-semibold ${titleColor}`}>
+                {title}
+            </h3>
+
+            <div
+                className="mt-4 grid grid-cols-2 gap-4 overflow-hidden"
+                style={{ maxHeight: expanded ? "none" : `${COLLAPSED_HEIGHT}px` }}
+            >
+                {columns.map((column, index) => (
+                    <IngredientColumn
+                        key={index}
+                        title={column.title}
+                        items={column.items}
+                    />
+                ))}
+            </div>
+
+            <div className="mt-3 text-center">
+                <button
+                    type="button"
+                    onClick={() => setExpanded((prev) => !prev)}
+                    className="text-sm font-semibold text-blue-600 hover:underline"
+                >
+                    {expanded ? "Less" : "More"}
+                </button>
+            </div>
+        </div>
+    );
+};
+
+const biscuitIndianStandard = [
+    "Whole wheat Meal",
+    "Wheat Atta",
+    "Semolina",
+    "Wheat Bran ",
+    "Wheat and Maize germ",
+    "Barley Powder",
+    "Oat , besan , rice, malt, soya bean, Tapioca and Potato Flour",
+    "Peanuts",
+    "Peanut Butter",
+    "Edible groundnut Flour",
+    "Isolates and Concentrates",
+    "Sweet Potato",
+    "Arrowroot Starch",
+    "Maize starch",
+    "Rice Starch",
+    "Casein",
+    "Milk powder and its products",
+    "Cheese",
+    "Whey Soids",
+    "Sugars",
+    "Liquid Glucose",
+    "Dextrose Monohydrate",
+    "Jaggery and Khandsari",
+    "lactose",
+    "Malt extract",
+    "Invert and golden syrup",
+    "Dessicated Coconut",
+    "Dry Fruits and edible Fruits",
+    "Pectin and Fruit Jams",
+    "Ginger, Chilli Powder, Black pepper, saffron , Cardamom, Cumin",
+    "Proteolytic and amylases, sodium bi sulphate and sodium metabisulphate.",
+    "Flour improvers",
+    "Baking powder, ammonium bicarbonate, sodium bi carbonate, ammonium carbonate.",
+    "Protein and calcium products.",
+    "Potassium Iodide",
+    "L-cysteine",
+    "Sodium sulphite and metabisulphite",
+    "Acetic or lactic acid ",
+];
+
+const biscuitFssai = [
+    "Millets/Pulses.",
+    "Fats and oils",
+    "Fat emulsions",
+    "Baking Powder",
+    "Sugar and sugar Products",
+    "Edible Salt",
+    "Salt Substitues",
+    "Dairy Products",
+    "Analogues",
+    "Nitritive and Non-nutritive Sweeteners",
+    "Honey",
+    "Invert Sugar",
+    "Jaggery",
+    "Dextrose",
+    "Edible Molasses",
+    "Glucose Syrup",
+    "Cocoa and Chocolates",
+    "Tea and Coffee",
+    "Chicory",
+    "Cocounts and its Products",
+    "Eggs and eggs products",
+    "Gluten",
+    "Nut and its products",
+    "Malt and its Products",
+    "Milk and its Products",
+    "Oilseeds and its products",
+    "Starches and Spices",
+    "Flours and Condiments",
+    "Herbs and there extracts",
+    "Vinegar",
+    "Edible seeds",
+    "Protein",
+    "Yeast and its products",
+    "Enzymes and Yeast",
+];
+
+const confectioneryIndianStandard = [
+    "Cane Jaggery",
+    "Palm Jaggery",
+    "Invert Sugar",
+    "sorbitol",
+    "Lactose",
+    "dextrose",
+    "Malt and Malt Extracts",
+    "Enzymes",
+    "Acidulants",
+    "Food Grade such as malic ,citric , tartaric and lactic acid",
+    "Jellifying agents sucha s gelatin, agar ,sodium sodium carboxymethyl cellulose.",
+    "Lubricats such as calcium, magnesium.",
+    "Sodium salts of stearic acis,talc,icing sugar .",
+    "Bee Wax,Carnuba wax",
+    "Anti Oxidants",
+    "Colouring matter",
+    "Flavours",
+    "Milk and milk products",
+    "Food grade mineral oil",
+    "Glycerine",
+    "Cocoa Butter",
+    "Sodium alignate",
+    "Acacia Gum",
+    "Toffees",
+];
+
+const confectioneryFssai = [
+    "Sugar,jaggery.",
+    "Milka nd Milk Products.",
+    "Edible Molasses.",
+    "Edible Starches",
+    "Edible Oils and Fats",
+    "Edible Common Salts",
+    "Fruit Products ,Nut Products",
+    "Tea and coffee Extracrs",
+    "Chocolate, Cocoa",
+    "Vitamins and Minerals",
+    "Shellac, bee wax",
+    "Dessicated Coconut",
+    "Spices and Condiments",
+    "Candied Peels",
+    "Stabalizing agents",
+    "Emulsifying Agents",
+    "Foodgrains and seeds",
+    "Baking Powder",
+    "Gulkand",
+    "Gulabanafsha , Mulathi",
+    "Puffed Rice",
+    "China grass",
+    "Thymol",
+    "Protein islolates",
+    "Arabic and Edible Gum",
+    "Isomaltulose at 50%.",
+    "Eucalyptus oil",
+    "Camphor, Peeper mint oil",
+    "Menthol Oil crystals",
+];
+
 const Ingredients = () => {
 
     return (
@@ -7,184 +196,23 @@ const Ingredients = () => {
             </h2>
 
             <div className="mt-6 grid gap-6 sm:grid-cols-2">
-                {/* Biscuit Ingredients */}
-                <div className="rounded-xl border border-gray-200 p-4">
-                    <h3 className="text-lg font-semibold text-blue-600 ">
-                        Biscuit Ingredients
-                    </h3>
+                <IngredientCard
+                    title="Biscuit Ingredients"
+                    titleColor="text-blue-600"
+                    columns={[
+                        { title: "As per Indian Standard", items: biscuitIndianStandard },
+                        { title: "As per FASSAI", items: biscuitFssai },
+                    ]}
+                />
 
-                    <div className="mt-4 grid gap-4 grid-cols-2">
-                        {/* As per Indian Standard */}
-                        <div>
-                            <h4 className="text-sm font-semibold text-gray-900 ">
-                                As per Indian Standard
-                            </h4>
-                            <ul className="mt-2 list-disc space-y-1 pl-5 text-gray-700">
-                                <li>Whole wheat Meal</li>
-                                <li>Wheat Atta</li>
-                                <li>Semolina</li>
-                                <li>Wheat Bran </li>
-                                <li>Wheat and Maize germ</li>
-                                <li>Barley Powder</li>
-                                <li>Oat , besan , rice, malt, soya bean, Tapioca and Potato Flour</li>
-                                <li>Peanuts</li>
-                                <li>Peanut Butter</li>
-                                <li>Edible groundnut Flour</li>
-                                <li>Isolates and Concentrates</li>
-                                <li>Sweet Potato</li>
-                                <li>Arrowroot Starch</li>
-                                <li>Maize starch</li>
-                                <li>Rice Starch</li>
-                                <li>Casein</li>
-                                <li>Milk powder and its products</li>
-                                <li>Cheese</li>
-                                <li>Whey Soids</li>
-                                <li>Sugars</li>
-                                <li>Liquid Glucose</li>
-                                <li>Dextrose Monohydrate</li>
-                                <li>Jaggery and Khandsari</li>
-                                <li>lactose</li>
-                                <li>Malt extract</li>
-                                <li>Invert and golden syrup</li>
-                                <li>Dessicated Coconut</li>
-                                <li>Dry Fruits and edible Fruits</li>
-                                <li>Pectin and Fruit Jams</li>
-                                <li>Ginger, Chilli Powder, Black pepper, saffron , Cardamom, Cumin</li>
-                                <li>Proteolytic and amylases, sodium bi sulphate and sodium metabisulphate.</li>
-                                <li>Flour improvers</li>
-                                <li>Baking powder, ammonium bicarbonate, sodium bi carbonate, ammonium carbonate.</li>
-                                <li>Protein and calcium products.</li>
-                                <li>Potassium Iodide</li>
-                                <li>L-cysteine</li>
-                                <li>Sodium sulphite and metabisulphite</li>
-                                <li>Acetic or lactic acid </li>
-                            </ul>
-                        </div>
-
-                        {/* As per FSSR */}
-                        <div>
-                            <h4 className="text-sm font-semibold text-gray-900 ">
-                                As per FASSAI
-                            </h4>
-                            <ul className="mt-2 list-disc space-y-1 pl-5 text-gray-700">
-                                <li>Millets/Pulses.</li>
-                                <li>Fats and oils</li>
-                                <li>Fat emulsions</li>
-                                <li>Baking Powder</li>
-                                <li>Sugar and sugar Products</li>
-                                <li>Edible Salt</li>
-                                <li>Salt Substitues</li>
-                                <li>Dairy Products</li>
-                                <li>Analogues</li>
-                                <li>Nitritive and Non-nutritive Sweeteners</li>
-                                <li>Honey</li>
-                                <li>Invert Sugar</li>
-                                <li>Jaggery</li>
-                                <li>Dextrose</li>
-                                <li>Edible Molasses</li>
-                                <li>Glucose Syrup</li>
-                                <li>Cocoa and Chocolates</li>
-                                <li>Tea and Coffee</li>
-                                <li>Chicory</li>
-                                <li>Cocounts and its Products</li>
-                                <li>Eggs and eggs products</li>
-                                <li>Gluten</li>
-                                <li>Nut and its products</li>
-                                <li>Malt and its Products</li>
-                                <li>Milk and its Products</li>
-                                <li>Oilseeds and its products</li>
-                                <li>Starches and Spices</li>
-                                <li>Flours and Condiments</li>
-                                <li>Herbs and there extracts</li>
-                                <li>Vinegar</li>
-                                <li>Edible seeds</li>
-                                <li>Protein</li>
-                                <li>Yeast and its products</li>
-                                <li>Enzymes and Yeast</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Confectionery Ingredients */}
-                <div className="rounded-xl border border-gray-200 p-4">
-                    <h3 className="text-lg font-semibold text-pink-600">
-                        Confectionery Ingredients
-                    </h3>
-
-                    <div className="mt-4 grid gap-4 grid-cols-2">
-                        {/* As per Indian Standard */}
-                        <div>
-                            <h4 className="text-sm font-semibold text-gray-900">
-                                As per Indian Standard
-                            </h4>
-                            <ul className="mt-2 list-disc space-y-1 pl-5 text-gray-700">
-                                <li>Cane Jaggery</li>
-                                <li>Palm Jaggery</li>
-                                <li>Invert Sugar</li>
-                                <li>sorbitol</li>
-                                <li>Lactose</li>
-                                <li>dextrose</li>
-                                <li>Malt and Malt Extracts</li>
-                                <li>Enzymes</li>
-                                <li>Acidulants</li>
-                                <li>Food Grade such as malic ,citric , tartaric and lactic acid</li>
-                                <li>Jellifying agents sucha s gelatin, agar ,sodium sodium carboxymethyl cellulose.</li>
-                                <li>Lubricats such as calcium, magnesium.</li>
-                                <li>Sodium salts of stearic acis,talc,icing sugar .</li>
-                                <li>Bee Wax,Carnuba wax</li>
-                                <li>Anti Oxidants</li>
-                                <li>Colouring matter</li>
-                                <li>Flavouring agents</li>
-                                <li>Milk and milk products</li>
-                                <li>Food grade mineral oil</li>
-                                <li>Glycerine</li>
-                                <li>Cocoa Butter</li>
-                                <li>Sodium alignate</li>
-                                <li>Acacia Gum</li>
-                                <li>Toffees</li>
-                            </ul>
-                        </div>
-
-                        {/* As per FSSR */}
-                        <div>
-                            <h4 className="text-sm font-semibold text-gray-900">
-                                As per FASSAI
-                            </h4>
-                            <ul className="mt-2 list-disc space-y-1 pl-5 text-gray-700">
-                                <li>Sugar,jaggery.</li>
-                                <li>Milka nd Milk Products.</li>
-                                <li>Edible Molasses.</li>
-                                <li>Edible Starches</li>
-                                <li>Edible Oils and Fats</li>
-                                <li>Edible Common Salts</li>
-                                <li>Fruit Products ,Nut Products</li>
-                                <li>Tea and coffee Extracrs</li>
-                                <li>Chocolate, Cocoa</li>
-                                <li>Vitamins and Minerals</li>
-                                <li>Shellac, bee wax</li>
-                                <li>Dessicated Coconut</li>
-                                <li>Spices and Condiments</li>
-                                <li>Candied Peels</li>
-                                <li>Stabalizing agents</li>
-                                <li>Emulsifying Agents</li>
-                                <li>Foodgrains and seeds</li>
-                                <li>Baking Powder</li>
-                                <li>Gulkand</li>
-                                <li>Gulabanafsha , Mulathi</li>
-                                <li>Puffed Rice</li>
-                                <li>China grass</li>
-                                <li>Thymol</li>
-                                <li>Protein islolates</li>
-                                <li>Arabic and Edible Gum</li>
-                                <li>Isomaltulose at 50%.</li>
-                                <li>Eucalyptus oil</li>
-                                <li>Camphor, Peeper mint oil</li>
-                                <li>Menthol Oil crystals</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <IngredientCard
+                    title="Confectionery Ingredients"
+                    titleColor="text-pink-600"
+                    columns={[
+                        { title: "As per Indian Standard", items: confectioneryIndianStandard },
+                        { title: "As per FASSAI", items: confectioneryFssai },
+                    ]}
+                />
             </div>
         </div>
     )

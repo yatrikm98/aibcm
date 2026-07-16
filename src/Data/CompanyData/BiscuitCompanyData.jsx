@@ -33,13 +33,20 @@ import ChocolateChipCookies from '../../Images/KamlaInternational/ChocolateChipC
 import CoconutCookies from '../../Images/KamlaInternational/CoconutCookies.jpg'
 import Glucose from '../../Images/KamlaInternational/Glucose.jpg'
 import MasalaBiscuit from '../../Images/KamlaInternational/MasalaBiscuit.jpg'
+import Britania from '../../CompanyLogos/Britania.webp'
+import Parle from '../../CompanyLogos/parle.webp'
+import ITCLimited from '../../CompanyLogos/ITC-Limited.webp'
+import DishaFoods from '../../CompanyLogos/DishaFoods.jpg'
+import KamlaInternational from '../../CompanyLogos/kamalaInternational.webp'
+
 
 
 
 
 const BiscuitCompanyData = [
     {
-        'title': '1.1) Britannia Industries',
+        "srno": "1)",
+        "title": "Britannia Industries",
         'overview': "Britannia Industries is India's largest biscuit and confectioner company, with total revenue reaching ₹19,375.62 crore in FY 2025-26. The biscuit segment is the company's core driver,accounting for roughly 80% of total revenue and making it the dominant leader in India's organized biscuit market.",
         "segment": "Biscuit",
         "annualturnoverInfo": "The biscuit segment generates approximately ₹15,500 - ₹16,000 crore of the company's overall annual turnover.",
@@ -56,17 +63,19 @@ const BiscuitCompanyData = [
             LittleHearts,
             MarieGold
         ],
-        figCaption: "1.1) Britannia Industries"
+        figCaption: "1) Britannia Industries",
+        logo: Britania
     },
     {
-        'title': ' 1.2) Parle ',
+        "srno": "2)",
+        'title': ' Parle ',
         'overview': " Headquartered in Mumbai, Parle Products is India's largest manufacturer of biscuits and confectionery, generating an impressive operating revenue of ₹15,568.49 crore in FY25.Biscuits account for over 50% to 70% of their total busines with their flagship brand Parle-G being the highest-selling biscuit brand in the world by volume.",
         "segment": "Biscuit",
         "annualturnoverInfo": "Parle Products is a multi-billion dollar enterprise. The company crossed $2 billion in annual revenues in FY22. In the financial year ending FY25, Parle Biscuits' (a major manufacturing subsidiary) operational revenue grew to ₹15,568.49 crore.",
         "marketshare": "Parle dominates with approximately 40% by volume of the total Indian biscuit market. In the glucose segment, its market share is often estimated between 50% and 70%.",
         "totalIncome": "₹8000 Cr.",
         "netprofit": "₹979.53 Cr.",
-        "marketcapitalization": "Does Not Trade on Stock Market.",
+        "marketcapitalization": "Private.",
         "link": "/biscuit-companies/parleg-images",
         "ImageButtonTitle": "Parle",
         "images": [
@@ -76,10 +85,12 @@ const BiscuitCompanyData = [
             Monaco,
             TwentyTwenty
         ],
-        figCaption: "1.2) Parle G"
+        figCaption: "2) Parle G",
+        logo: Parle
     },
     {
-        'title': ' 1.3) ITC Limited',
+        'srno': "3)",
+        'title': ' ITC Limited',
         'overview': " ITC’s branded packaged foods business—which includes the Sunfeast biscuit range, Aashirvaad atta, and YiPPee! noodles—is a massive growth driver. Generating well over ₹73,465 crores in revenue, ITC’s overall food division is the second-largest packaged foods company in India by sales.In the biscuit sector specifically, ITC is the established market leader in the cream segment and commands around 10–12% of the overall Indian biscuit market.",
         "segment": "Biscuit",
         "annualturnoverInfo": "Analysts estimate that ITC's biscuit portfolio contributes over ₹4,000 to ₹5,000 crores annually to the company's revenue.",
@@ -96,17 +107,19 @@ const BiscuitCompanyData = [
             MarieLite,
             MomMagic,
         ],
-        figCaption: "1.3) ITC Limited"
+        figCaption: "3) ITC Limited",
+        logo: ITCLimited
     },
     {
-        'title': '1.4) Disha Foods Private Limited ',
+        'srno': "4)",
+        'title': 'Disha Foods Private Limited ',
         'overview': `Founded in 1983 in Hyderabad (India), BakeMate is one of the world’s leading manufacturers and exporters of premium chocolates, biscuits, wafers, cookies, and confectioneries.`,
         "segment": "Biscuit",
         "annualturnoverInfo": "Disha Foods Private Limited (maker of the BakeMate brand) generates an annual revenue estimated between ₹100 crore to ₹500 crore ($12M - $60M USD). Operating out of Hyderabad, India, the company manufactures and exports biscuits, chocolates, and confectionery products to over 200 countries worldwide.",
         "marketshare": "DISHA FOODS PRIVATE LIMITED's last Annual General Meeting (AGM) was held on Sep 30, 2024 as per records from Ministry of Corporate Affairs (MCA). DISHA FOODS PRIVATE LIMITED's authorised share capital is ₹4Cr and its paid up capital is ₹1.71Cr. ",
         "totalIncome": "₹100 -500 Cr.",
         "netprofit": "₹7-45 Cr.",
-        "marketcapitalization": "Does Not Trade on Stock Market.",
+        "marketcapitalization": "Private.",
         "link": "/biscuit-companies/disha-foods",
         "ImageButtonTitle": "Disha-Foods",
         "images": [
@@ -116,17 +129,19 @@ const BiscuitCompanyData = [
             BroPop,
             ButterMate
         ],
-        figCaption: "1.4) Disha-Foods"
+        figCaption: "4) Disha-Foods",
+        logo:DishaFoods
     },
     {
-        'title': '1.5) Kamla International',
+        'srno':"5)",
+        'title': ' Kamla International',
         'overview': "Kamala International Is A Manufacturers, Suppliers & Exporters of Glucose Biscuits, Cream Biscuits, Marie Biscuits, Nice Biscuits, Petit Beurre Biscuits, Bourbon Biscuits, Masala Biscuits, Chocolate Biscuits, Coconut Cookies, Cocoa Cookies, Chocolate Coconut Cookies & Chocolate Chip Cookies.",
         "segment": "Biscuit",
         "annualturnoverInfo": "Kamla International (legally registered as Kamala International Exim Private Limited) generates approximately ₹81.2 Cr in annual operating revenue (US $50 Million to US $100 Million). The Hyderabad-based manufacturer and exporter of biscuits, wafers, and confectionery items handles a massive volume of international shipments globally.",
         "marketshare": "Kamla International (Kamala International Exim Pvt Ltd) operates primarily as an export-focused manufacturer and trader. In the broader Indian biscuit market—dominated by giants like Britannia (approx. 38% share) and Parle (approx. 36% share)—Kamla International's market share is less than 1%.",
         "totalIncome": "₹81.2 Cr.",
         "netprofit": "₹3.5 Cr – ₹5 Cr.",
-        "marketcapitalization": "Does Not Trade on Stock Market.",
+        "marketcapitalization": "Private.",
         "link": "/biscuit-companies/kamla-international",
         "ImageButtonTitle": "Kamla International",
         "images": [
@@ -136,7 +151,8 @@ const BiscuitCompanyData = [
             Glucose,
             MasalaBiscuit
         ],
-        figCaption: "1.5) Kamla International"
+        figCaption: "5) Kamla International",
+        logo:KamlaInternational
     }
 ]
 

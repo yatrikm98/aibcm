@@ -101,10 +101,10 @@ const ConfectioneryProcess = () => {
                     </p>
                 </div>
 
-                <div className="grid items-center gap-8 lg:grid-cols-[1.2fr_0.8fr]">
+                <div className="grid items-stretch gap-8 lg:h-[36rem] lg:grid-cols-[1.2fr_0.8fr]">
                     {/* Carousel */}
-                    <div className="relative overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-gray-200">
-                        <div className="relative h-[28rem] sm:h-[34rem]">
+                    <div className="relative flex flex-col overflow-hidden rounded-3xl bg-white shadow-xl ring-1 ring-gray-200">
+                        <div className="relative flex-1 min-h-[20rem]">
                             <AnimatePresence initial={false} custom={direction}>
                                 <motion.div
                                     key={index}
@@ -184,15 +184,15 @@ const ConfectioneryProcess = () => {
                     </div>
 
                     {/* Right Side Content */}
-                    <div className="space-y-4">
+                    <div className="space-y-3">
 
-                        <div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
+                        <div className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-gray-200">
 
-                            <h3 className="text-xl font-semibold text-gray-900">
+                            <h3 className="text-lg font-semibold text-gray-900">
                                 Process Summary
                             </h3>
 
-                            <p className="mt-3 text-base leading-7 text-gray-700">
+                            <p className="mt-2 text-sm leading-6 text-gray-700">
                                 Confectionery products such as chocolates,
                                 candies, toffees, and gummies are produced by
                                 preparing ingredients, cooking the mixture,
@@ -201,7 +201,7 @@ const ConfectioneryProcess = () => {
                             </p>
                         </div>
 
-                        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+                        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
 
                             {confectionerySlides.map((item, i) => (
                                 <button
@@ -209,7 +209,7 @@ const ConfectioneryProcess = () => {
                                     onClick={() =>
                                         setIndex([i, i > index ? 1 : -1])
                                     }
-                                    className={`rounded-2xl border p-4 text-left transition ${i === index
+                                    className={`rounded-2xl border p-3 text-left transition ${i === index
                                         ? "border-blue-600 bg-blue-50"
                                         : "border-gray-200 bg-white hover:bg-gray-50"
                                         }`}
@@ -218,11 +218,11 @@ const ConfectioneryProcess = () => {
                                         {item.step}
                                     </div>
 
-                                    <div className="mt-1 text-lg font-semibold text-gray-900">
+                                    <div className="mt-0.5 text-base font-semibold text-gray-900">
                                         {item.title}
                                     </div>
 
-                                    <div className="mt-2 text-sm leading-6 text-gray-600">
+                                    <div className="mt-1 text-sm leading-5 text-gray-600">
                                         {item.text}
                                     </div>
                                 </button>
@@ -231,41 +231,41 @@ const ConfectioneryProcess = () => {
                     </div>
                 </div>
             </div>
-            <div className="mx-auto  max-w-6xl mt-5 ">
-                <div className="flex justify-around max-[1150px]:flex-col max-[1150px]:items-center">
-                    <div>
-                        <span>BubbleGum :- </span>
+            <div className="mx-auto  max-w-6xl mt-24 ">
+                <div className="flex justify-around gap-6 max-[1150px]:flex-col max-[1150px]:items-center">
+                    <div className="mt-6 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-200">
+                        <span className="block text-center font-semibold text-gray-900">BubbleGum :- </span>
                         <video
-                            className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:max-w-4xl"
+                            className="mt-3 aspect-video w-full max-w-lg rounded-xl max-[1150px]:max-w-4xl"
                             src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784110977/BubbleGum_gs9h3r.mp4"
                             controls
                             playsInline
                         />
                     </div>
-                    <div>
-                        <span>Candy :-</span>
+                    <div className="mt-6 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-200">
+                        <span className="block text-center font-semibold text-gray-900">Candy :-</span>
                         <video
-                            className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
+                            className="mt-3 aspect-video w-full max-w-lg rounded-xl max-[1150px]:max-w-4xl"
                             src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784110977/Candy_paz4eb.mp4"
                             controls
                             playsInline
                         />
                     </div>
                 </div>
-                <div className="flex justify-around max-[1150px]:flex-col max-[1150px]:items-center mt-2">
-                    <div>
-                        <span>Chocolate :-</span>
+                <div className="flex justify-around gap-6 max-[1150px]:flex-col max-[1150px]:items-center mt-2">
+                    <div className="mt-6 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-200">
+                        <span className="block text-center font-semibold text-gray-900">Chocolate :-</span>
                         <video
-                            className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
+                            className="mt-3 aspect-video w-full max-w-lg rounded-xl max-[1150px]:max-w-4xl"
                             src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784110979/Chocolate_j5j4d3.mp4"
                             controls
                             playsInline
                         />
                     </div>
-                    <div>
-                        <span>Melody :-</span>
+                    <div className="mt-6 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-gray-200">
+                        <span className="block text-center font-semibold text-gray-900">Melody :-</span>
                         <video
-                            className="aspect-video w-full max-w-lg rounded-xl max-[1150px]:mt-3 max-[1150px]:max-w-4xl"
+                            className="mt-3 aspect-video w-full max-w-lg rounded-xl max-[1150px]:max-w-4xl"
                             src="https://res.cloudinary.com/dttfnjfr4/video/upload/v1784111010/Melody_jaylkz.mp4"
                             controls
                             playsInline
@@ -274,7 +274,6 @@ const ConfectioneryProcess = () => {
                 </div>
 
             </div>
-            <div className="text-center mt-3 font-semibold text-[16px]">How are Confectionary Made.</div>
         </div>
     );
 };

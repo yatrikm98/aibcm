@@ -101,8 +101,9 @@ const About = () => {
             <h2 className="mb-3 text-center text-2xl font-semibold text-orange-400 ">
               Key Personnel:
             </h2>
-            <div className='mb-3 text-center font-semibold text-xl mb-5'>The company's active directors are :-
-              <div className="flex flex-wrap justify-center gap-8">
+            <div className='mb-3 text-center font-semibold text-xl '>
+              The company's active directors
+              <div className="flex flex-wrap justify-center gap-8 mt-5">
                 {/* Card 1 */}
                 <div className="flex w-80 flex-col rounded-xl border border-gray-200 bg-white p-5 shadow-lg">
                   <h2 className="mb-4 text-center text-xl font-semibold text-orange-500">
