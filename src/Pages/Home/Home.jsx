@@ -8,6 +8,7 @@ import Footer from "../Footer/Footer.jsx";
 import Ingredients from "./Ingredients.jsx";
 import Melody from '../../Images/Melody.avif'
 import Wallpaper from '../../Images/Wallpaper.png'
+import Seo from '../components/Seo.jsx'
 import Cookies from '../../BiscuitLogos/Cookies.avif'
 import Crackers from '../../BiscuitLogos/Crackers.avif'
 import SemiSweetBiscuit from '../../BiscuitLogos/SemiSweetBiscuit.jpg'
@@ -26,13 +27,17 @@ const Home = () => {
 
     return (
         <>
+            <Seo
+                title="AIBCM | All India Biscuits & Confectionery Manufacturers and Exporters Association"
+                description="Official site of the All India Biscuits and Confectionery Manufacturers and Exporters Association (AIBCM) — a Delhi-registered non-profit supporting biscuit and confectionery manufacturing and exports across India."
+            />
             {/* Wallpaper background behind the text */}
             <div className="relative">
                 <div
                     className="pointer-events-none absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-40"
                     style={{ backgroundImage: `url(${Wallpaper})` }}
                 />
-                <img src={CompanyLogo} className="mt-20 flex items-center mx-auto max-w-4xl h-20" />
+                <img src={CompanyLogo} alt="Company Logo" className="mt-20 flex items-center mx-auto max-w-4xl h-20" />
                 <h1 className="italic mx-auto max-w-4xl  mt-0 text-3xl font-bold text-gray-900 sm:text-4xl  mb-10 text-center sm:mb-6">
                     All India Biscuits and Confectionery Manufacturers and Exporters Association
                 </h1>
@@ -99,32 +104,32 @@ const Home = () => {
                                 <li>
                                     <span className="inline-flex items-center gap-2 align-middle text-lg">
                                         Sweet
-                                        <img src={SweetBiscuit} className="h-10 w-auto rounded" />
+                                        <img src={SweetBiscuit} alt="Sweet Biscuit" className="h-10 w-auto rounded" />
                                     </span>
                                 </li>
                                 <li>
                                     <span className="inline-flex items-center gap-2 align-middle text-lg">
                                         Semi-sweet
-                                        <img src={SemiSweetBiscuit} className="h-10 w-auto rounded" />
+                                        <img alt="SemiSweetBiscuit" src={SemiSweetBiscuit} className="h-10 w-auto rounded" />
                                     </span>
                                 </li>
                                 <li>
                                     <span className="inline-flex items-center gap-2 align-middle text-lg">
                                         Crackers
-                                        <img src={Crackers} className="h-10 w-auto rounded" />
+                                        <img alt="Crackers" src={Crackers} className="h-10 w-auto rounded" />
                                     </span>
                                 </li>
                                 <li>
                                     <span className="inline-flex items-center gap-2 align-middle text-lg">
                                         Cookies
-                                        <img src={Cookies} className="h-10 w-auto rounded" />
+                                        <img alt="Cookies" src={Cookies} className="h-10 w-auto rounded" />
                                     </span>
 
                                 </li>
                                 <li>
                                     <span className="inline-flex items-center gap-2 align-middle text-lg">
                                         Speciality biscuits
-                                        <img src={SpecialityBiscuit} className="h-10 w-auto rounded" />
+                                        <img alt="SpecialityBiscuit" src={SpecialityBiscuit} className="h-10 w-auto rounded" />
                                     </span>
                                 </li>
                             </ul>
@@ -140,19 +145,19 @@ const Home = () => {
 
                                     <span className="inline-flex items-center gap-2 align-middle text-lg">
                                         Chocolates
-                                        <img src={Chocolate} className="h-10 w-auto rounded" />
+                                        <img src={Chocolate} alt="Chocolate" className="h-10 w-auto rounded" />
                                     </span>
                                 </li>
                                 <li>
                                     <span className="inline-flex items-center gap-2 align-middle text-lg">
                                         Candies
-                                        <img src={Candies} className="h-10 w-auto rounded" />
+                                        <img src={Candies} alt="Candies" className="h-10 w-auto rounded" />
                                     </span>
                                 </li>
                                 <li>
                                     <span className="inline-flex items-center gap-2 align-middle text-lg">
                                         Toffees
-                                        <img src={Toffies} className="h-10 w-auto rounded" />
+                                        <img src={Toffies} alt="Toffies" className="h-10 w-auto rounded" />
                                     </span>
                                 </li>
                                 <li>

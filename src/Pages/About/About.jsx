@@ -4,6 +4,7 @@ import CompanyLogo from '../../assets/CompanyLogo.svg'
 import Footer from '../Footer/Footer';
 import SharadMeshram from '../../Images/SharadMeshram.jpeg'
 import AshishJha from '../../Images/AshishJha.jpeg'
+import Seo from '../components/Seo.jsx'
 
 
 const About = () => {
@@ -62,6 +63,10 @@ const About = () => {
 
   return (
     <>
+      <Seo
+        title="About Us | AIBCM — Biscuits & Confectionery Manufacturers Association"
+        description="Learn about the All India Biscuits and Confectionery Manufacturers and Exporters Association (AIBCM): its registration details, key personnel, overview, and compliance status."
+      />
       <div className="bg-white py-10 mt-1">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
 
@@ -70,7 +75,7 @@ const About = () => {
             <h1 className="text-3xl font-bold text-orange-400 lg:mt-8 sm:text-4xl mt-20 ">
               About Us
             </h1>
-            <img src={CompanyLogo} className="mt-10 flex items-center mx-auto max-w-4xl h-20" />
+            <img src={CompanyLogo} alt='Company Logo' className="mt-10 flex items-center mx-auto max-w-4xl h-20" />
             <div className="mx-auto flex mt-10 flex justify-center gap-4 text-center rounded-2xl bg-white p-6 shadow-sm">
               <h1 className="text-xl text-gray-900 sm:text-xl flex items-center">
                 All India Biscuits and Confectionery Manufacturers and Exporters

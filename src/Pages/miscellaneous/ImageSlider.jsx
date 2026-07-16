@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const ImageSlider = ({ Images }) => {
+const ImageSlider = ({ Images, label = "Product" }) => {
     const positions = ["center", "left1", "left", "right", "right1"];
     const [positionIndex, setPositionIndex] = useState([0, 1, 2, 3, 4]);
     const [isSmall, setIsSmall] = useState(false);
@@ -106,7 +106,7 @@ const ImageSlider = ({ Images }) => {
                         <motion.img
                             key={index}
                             src={image}
-                            alt={`slide-${index}`}
+                            alt={`${label} product image ${index + 1}`}
                             className="
           absolute left-1/2 top-1/2
           rounded-2xl object-contain shadow-2xl
