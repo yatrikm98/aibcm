@@ -52,15 +52,37 @@ function InstagramEmbed({
   return (
     <div className={`ig-embed h-full w-full ${className}`}>
       <style>{`
-        .ig-embed { position: relative; background: #fff; border-radius: 1rem; overflow: hidden; }
+        .ig-embed {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #fff;
+          border-radius: 1rem;
+        }
+        /* Keep the embed at its natural width at every screen size so it never
+           widens/narrows during Instagram's layout pass. */
         .ig-embed .ig-fill {
-          max-width: 540px;
+          width: 100%;
+          max-width: 720px;
           margin: 0 auto;
           min-height: 640px;
         }
-        .ig-embed .instagram-media {
+        .ig-embed .instagram-media,
+        .ig-embed .instagram-media iframe {
           margin: 0 auto !important;
           min-width: 0 !important;
+          width: 100% !important;
+          max-width: 720px !important;
+        }
+        /* On desktop, cap the embed to the column height (same as the two divs
+           on the right) and scroll any overflow instead of growing taller. */
+        @media (min-width: 768px) {
+          .ig-embed .ig-fill {
+            height: 100%;
+            min-height: 0;
+            overflow-y: auto;
+          }
         }
         .ig-loader {
           position: absolute; inset: 0;
@@ -73,16 +95,6 @@ function InstagramEmbed({
           animation: ig-spin 0.8s linear infinite;
         }
         @keyframes ig-spin { to { transform: rotate(360deg); } }
-        @media (min-width: 768px) {
-          .ig-embed .ig-fill { max-width: none; min-height: 0; }
-          .ig-embed,
-          .ig-embed .instagram-media,
-          .ig-embed .instagram-media iframe {
-            height: 100% !important;
-            min-height: 0 !important;
-            width: 100% !important;
-          }
-        }
       `}</style>
 
       {!loaded && (
