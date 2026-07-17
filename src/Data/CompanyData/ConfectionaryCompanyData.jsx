@@ -49,7 +49,6 @@ const ConfectionaryCompanyData = [
             DairymilkSilk,
             Shots
         ],
-        figCaption: "1) Mondelez",
         logo:MondelezIndia
     },
     {
@@ -70,7 +69,6 @@ const ConfectionaryCompanyData = [
             CenterFruit,
             Mentos
         ],
-        figCaption: "2) Perfetti Van Melle",
         logo:PErfettiVenMelle
     },
     {
@@ -91,7 +89,6 @@ const ConfectionaryCompanyData = [
             Munch,
             Polo
         ],
-        figCaption: "3) Nestle India",
         logo:Nestle
     },
     {
@@ -112,7 +109,6 @@ const ConfectionaryCompanyData = [
             Melody,
             Poppins
         ],
-        figCaption: "4) Parle",
         logo:Parle
     },
     {
@@ -133,7 +129,6 @@ const ConfectionaryCompanyData = [
             Orbit,
             Snickers
         ],
-        figCaption: "5) Mars Wrigley",
         logo:MarsWrigley
     }
 ]

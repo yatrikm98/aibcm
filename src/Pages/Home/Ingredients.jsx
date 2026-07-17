@@ -143,7 +143,7 @@ const confectioneryIndianStandard = [
     "Enzymes",
     "Acidulants",
     "Food Grade such as malic ,citric , tartaric and lactic acid",
-    "Jellifying agents sucha s gelatin, agar ,sodium sodium carboxymethyl cellulose.",
+    "Jellifying agents such as gelatin, agar ,sodium sodium carboxymethyl cellulose.",
     "Lubricats such as calcium, magnesium.",
     "Sodium salts of stearic acis,talc,icing sugar .",
     "Bee Wax,Carnuba wax",

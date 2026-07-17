@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import BiscuitProcess from "./BiscuitProcess.jsx";
 import ConfectioneryProcess from "./ConfectionaryProcess.jsx";
-import CompanyLogo from '../../assets/CompanyLogo.svg'
+import CompanyLogo from '../../assets/CompanyLogoTransparent.png'
 import Footer from "../Footer/Footer.jsx";
 import Ingredients from "./Ingredients.jsx";
 import Melody from '../../Images/Melody.avif'

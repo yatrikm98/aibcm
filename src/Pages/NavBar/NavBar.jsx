@@ -9,7 +9,7 @@ import {
   FaBars,
   FaTimes
 } from 'react-icons/fa';
-import CompanyLogo from '../../assets/CompanyLogo.svg';
+import CompanyLogo from '../../assets/CompanyLogoTransparent.png';
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);

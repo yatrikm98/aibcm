@@ -1,6 +1,6 @@
 import KamleshSoni from '../../Images/KamleshSoni.jpeg';
 import TimothyBochu from '../../Images/TimothyBochu.jpeg';
-import CompanyLogo from '../../assets/CompanyLogo.svg'
+import CompanyLogo from '../../assets/CompanyLogoTransparent.png'
 import Footer from '../Footer/Footer';
 import SharadMeshram from '../../Images/SharadMeshram.jpeg'
 import AshishJha from '../../Images/AshishJha.jpeg'

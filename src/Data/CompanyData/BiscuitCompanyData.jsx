@@ -62,7 +62,6 @@ const BiscuitCompanyData = [
             LittleHearts,
             MarieGold
         ],
-        figCaption: "1) Britannia Industries",
         logo: Britania
     },
     {
@@ -83,7 +82,6 @@ const BiscuitCompanyData = [
             Monaco,
             TwentyTwenty
         ],
-        figCaption: "2) Parle G",
         logo: Parle
     },
     {
@@ -104,7 +102,6 @@ const BiscuitCompanyData = [
             MarieLite,
             MomMagic,
         ],
-        figCaption: "3) ITC Limited",
         logo: ITCLimited
     },
     {
@@ -125,11 +122,10 @@ const BiscuitCompanyData = [
             BroPop,
             ButterMate
         ],
-        figCaption: "4) Disha-Foods",
-        logo:DishaFoods
+        logo: DishaFoods
     },
     {
-        'title': ' Kamla International',
+        'title': 'Kamla International',
         'overview': "Kamala International Is A Manufacturers, Suppliers & Exporters of Glucose Biscuits, Cream Biscuits, Marie Biscuits, Nice Biscuits, Petit Beurre Biscuits, Bourbon Biscuits, Masala Biscuits, Chocolate Biscuits, Coconut Cookies, Cocoa Cookies, Chocolate Coconut Cookies & Chocolate Chip Cookies.",
         "segment": "Biscuit",
         "annualturnoverInfo": "Kamla International (legally registered as Kamala International Exim Private Limited) generates approximately ₹81.2 Cr in annual operating revenue (US $50 Million to US $100 Million). The Hyderabad-based manufacturer and exporter of biscuits, wafers, and confectionery items handles a massive volume of international shipments globally.",
@@ -146,8 +142,7 @@ const BiscuitCompanyData = [
             Glucose,
             MasalaBiscuit
         ],
-        figCaption: "5) Kamla International",
-        logo:KamlaInternational
+        logo: KamlaInternational
     }
 ]
 
