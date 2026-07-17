@@ -8,7 +8,6 @@ import Footer from "../Footer/Footer.jsx";
 import Ingredients from "./Ingredients.jsx";
 import Melody from '../../Images/Melody.avif'
 import Wallpaper from '../../Images/Wallpaper.png'
-import Seo from '../components/Seo.jsx'
 import Cookies from '../../BiscuitLogos/Cookies.avif'
 import Crackers from '../../BiscuitLogos/Crackers.avif'
 import SemiSweetBiscuit from '../../BiscuitLogos/SemiSweetBiscuit.jpg'
@@ -143,10 +142,6 @@ const Home = () => {
 
     return (
         <>
-            <Seo
-                title="AIBCM | All India Biscuits & Confectionery Manufacturers and Exporters Association"
-                description="Official site of the All India Biscuits and Confectionery Manufacturers and Exporters Association (AIBCM) — a Delhi-registered non-profit supporting biscuit and confectionery manufacturing and exports across India."
-            />
             {/* Wallpaper background behind the text */}
             <div className="relative">
                 <div

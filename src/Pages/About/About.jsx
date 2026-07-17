@@ -4,7 +4,6 @@ import CompanyLogo from '../../assets/CompanyLogo.svg'
 import Footer from '../Footer/Footer';
 import SharadMeshram from '../../Images/SharadMeshram.jpeg'
 import AshishJha from '../../Images/AshishJha.jpeg'
-import Seo from '../components/Seo.jsx'
 
 
 const About = () => {
@@ -63,10 +62,6 @@ const About = () => {
 
   return (
     <>
-      <Seo
-        title="About Us | AIBCM — Biscuits & Confectionery Manufacturers Association"
-        description="Learn about the All India Biscuits and Confectionery Manufacturers and Exporters Association (AIBCM): its registration details, key personnel, overview, and compliance status."
-      />
       <div className="bg-white py-10 mt-1">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
 

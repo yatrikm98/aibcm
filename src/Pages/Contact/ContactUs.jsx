@@ -1,15 +1,10 @@
 import Footer from "../Footer/Footer";
-import Seo from "../components/Seo.jsx";
 
 const Contact = () => {
 
     return (
 
         <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white mt-12">
-            <Seo
-                title="Contact Us | AIBCM — Biscuits & Confectionery Manufacturers Association"
-                description="Contact the All India Biscuits and Confectionery Manufacturers and Exporters Association (AIBCM) in Tilak Nagar, Delhi. Call 011-41500409 or email aibcmea@gmail.com."
-            />
             <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-4 py-6 sm:px-6 lg:px-8">
                 {/* Top information */}
                 {/* <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 sm:p-6 max-[650px]:mt-15"> */}

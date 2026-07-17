@@ -17,13 +17,25 @@ function InstagramEmbed({
       }
     };
 
-    // Watch for the <iframe> Instagram injects, so we can hide the loader once it's in.
+    // Instagram injects an <iframe>, then resizes it a few times to fit the reel.
+    // We keep the loader over it and the embed hidden until that resize settles,
+    // so the user never SEES the expand-then-shrink — it happens off-screen.
     let observer;
+    let revealTimer;
+    const reveal = () => setLoaded(true);
     if (containerRef.current) {
       observer = new MutationObserver(() => {
-        if (containerRef.current && containerRef.current.querySelector("iframe")) {
-          setLoaded(true);
+        const iframe =
+          containerRef.current && containerRef.current.querySelector("iframe");
+        if (iframe) {
           observer.disconnect();
+          // Reveal a short beat after the iframe finishes loading, by which
+          // point Instagram's resize pass has landed on the final size.
+          iframe.addEventListener("load", () => {
+            revealTimer = setTimeout(reveal, 400);
+          });
+          // Fallback in case the load event already fired or is missed.
+          revealTimer = setTimeout(reveal, 2000);
         }
       });
       observer.observe(containerRef.current, { childList: true, subtree: true });
@@ -46,7 +58,10 @@ function InstagramEmbed({
       }
     }
 
-    return () => observer && observer.disconnect();
+    return () => {
+      observer && observer.disconnect();
+      revealTimer && clearTimeout(revealTimer);
+    };
   }, [permalink]);
 
   return (
@@ -61,19 +76,27 @@ function InstagramEmbed({
           border-radius: 1rem;
         }
         /* Keep the embed at its natural width at every screen size so it never
-           widens/narrows during Instagram's layout pass. */
+           widens/narrows during Instagram's layout pass. 540px is Instagram's
+           own max embed width — matching it means the placeholder box and the
+           final reel are the same width, so there's no expand-then-shrink jump. */
         .ig-embed .ig-fill {
           width: 100%;
-          max-width: 720px;
+          max-width: 540px;
           margin: 0 auto;
           min-height: 640px;
+          /* Hidden until Instagram's resize settles, then fade in at final size. */
+          opacity: 0;
+          transition: opacity 0.25s ease;
+        }
+        .ig-embed .ig-fill.is-loaded {
+          opacity: 1;
         }
         .ig-embed .instagram-media,
         .ig-embed .instagram-media iframe {
           margin: 0 auto !important;
           min-width: 0 !important;
           width: 100% !important;
-          max-width: 720px !important;
+          max-width: 540px !important;
         }
         /* On desktop, cap the embed to the column height (same as the two divs
            on the right) and scroll any overflow instead of growing taller. */
@@ -103,7 +126,10 @@ function InstagramEmbed({
         </div>
       )}
 
-      <div className="ig-fill h-full w-full" ref={containerRef}>
+      <div
+        className={`ig-fill h-full w-full ${loaded ? "is-loaded" : ""}`}
+        ref={containerRef}
+      >
         <blockquote
           className="instagram-media"
           data-instgrm-captioned
