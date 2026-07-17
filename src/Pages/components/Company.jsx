@@ -80,9 +80,9 @@ const Company = ({ data }) => {
                             </div>
                         </div>
                     </div>
-                    {data.title === "2.4) Mars Wrigley" ? <div className='text-center mt-3'>Note:- The company is in loss(in India) but worldwide it is booming.</div> : ""}
+                    {/* {data.title === "Mars Wrigley" ? <div className='text-center mt-3'>Note:- The company is in loss(in India) but worldwide it is booming.</div> : ""} */}
                     <ImageSlider Images={data.images} label={data.title} />
-                    {data.title === 'Kamla International' || data.title === ' Mars Wrigley' ?  "" : <div className='mx-auto h-0.5 w-[400px] max-w-full bg-gray-800 max-[650px]:mt-15' />}
+                    {data.title === 'Kamla International' || data.title === ' Mars Wrigley' ? "" : <div className='mx-auto h-0.5 w-[400px] max-w-full bg-gray-800 max-[650px]:mt-15' />}
                 </div>
             </div>
         </>
