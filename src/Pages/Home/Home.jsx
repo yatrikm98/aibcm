@@ -6,7 +6,7 @@ import ConfectioneryProcess from "./ConfectionaryProcess.jsx";
 import CompanyLogo from '../../assets/CompanyLogoTransparent.png'
 import Footer from "../Footer/Footer.jsx";
 import Ingredients from "./Ingredients.jsx";
-import Melody from '../../Images/Melody.avif'
+import Melody from '../../Images/Melody-hd.jpg'
 import Wallpaper from '../../Images/Wallpaper.png'
 import Cookies from '../../BiscuitLogos/Cookies.avif'
 import Crackers from '../../BiscuitLogos/Crackers.avif'
@@ -17,8 +17,6 @@ import Candies from '../../Confectionery-Logos/Candies.avif'
 import ChewingGum from '../../Confectionery-Logos/ChewingGum.webp'
 import Chocolate from '../../Confectionery-Logos/Chocolate.jpg'
 import Toffies from '../../Confectionery-Logos/Toffies.jpg'
-
-
 import BarleyPowder from '../../Images/Ingredients/BarleyPowder.png'
 import Cheese from '../../Images/Ingredients/Cheese.jpg'
 import ChinaGrass from '../../Images/Ingredients/ChinaGrass.jpg'
@@ -30,7 +28,7 @@ import PeanutButter from '../../Images/Ingredients/PeanutButter.jpg'
 import RiceStarch from '../../Images/Ingredients/RiceStarch.png'
 import Sugar from '../../Images/Ingredients/Sugar.jpg'
 
-import InstagramEmbed from "../components/Instagram.jsx";
+
 
 
 const carouselItems = [
@@ -156,13 +154,12 @@ const Home = () => {
                 {/* Two-column: left = Melody image, right = Manufacturers + Introduction */}
                 <div className="mx-auto max-w-6xl flex flex-col gap-4 px-4 md:flex-row md:items-stretch md:h-[36rem]">
                     {/* Left column: Melody image */}
-                    <div className="flex-1 md:h-full">
-                        {/* <img
+                    <div className="flex-1 min-w-0 md:h-full">
+                        <img
                             src={Melody}
                             alt="Melody"
-                            className="h-auto max-h-full w-full rounded-2xl object-contain sm:h-44 md:h-full"
-                        /> */}
-                        <InstagramEmbed />
+                            className="mx-auto block h-auto w-full max-w-md rounded-2xl md:h-full md:max-w-none md:object-cover md:object-[center_35%]"
+                        />
                     </div>
 
                     {/* Right column: Introduction + Manufacturers */}
